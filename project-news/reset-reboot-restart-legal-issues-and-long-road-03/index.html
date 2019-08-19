@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reset, Reboot, Restart,	legal issues and the long road to 0.3 | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="Reset, Reboot, Restart,	legal issues and the long road to 0.3" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/project-news/reset-reboot-restart-legal-issues-and-long-road-03//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Reset, Reboot, Restart,	legal issues and the long road to 0.3 logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Reset, Reboot, Restart,	legal issues and the long road to 0.3 logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">Reset, Reboot, Restart,	legal issues and the long road to 0.3 - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/project-news'>project-news</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/project-news/reset-reboot-restart-legal-issues-and-long-road-03'>reset-reboot-restart-legal-issues-and-long-road-03</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>Reset, Reboot, Restart,	legal issues and the long road to 0.3</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">sedwards</a> | January 27, 2006</p>
+
+						<div id="post-content">
+							
+Hello,<br/>
+There has been a lot of talk about possible tainted code in ReactOS<br/>
+and or developers that had access to leaked Microsoft source code.<br/>
+This has caused a lot of speculation about the future of the ReactOS<br/>
+Project. I'm going to try to put those fears to rest and explain what<br/>
+has been going on and where we are going to go from here.<br/>
+ <br/>
+There was one issue that started this discussion and it related to<br/>
+clean-room reverse engineering of certain code in ReactOS. Due to the<br/>
+fact we have developers in many different countries the term reverse<br/>
+engineering can mean many things to many different people. For us in<br/>
+the US when you speak of clean-room reverse engineering it means that<br/>
+one person tears apart the implementation of a device, writes<br/>
+documentation and another reads that documentation and implements.<br/>
+Other countries do not require this invisible great wall of<br/>
+development and allow the same person that disassembles the interface<br/>
+to also write the replacement implementation.<br/>
+ <br/>
+Because of the confusion this has caused and the possible legal issues<br/>
+this could lead to we have decided to do the following.<br/>
+ <br/>
+1) Amend our Intellectual Property Policy Statement to reflect<br/>
+clean-room reverse engineering as meaning the US standard method for<br/>
+reverse engineering and make that the project requirement<br/>
+ <br/>
+2) Audit the entire source tree and rewrite all code found to have<br/>
+been implemented not using the US method for reverse Engineering<br/>
+ <br/>
+3) Require all developers contributing major code to accept the terms<br/>
+of our IP Policy Document via signature.<br/>
+ <br/>
+Now as for the issue of leaked source code, I want to try to put all<br/>
+fears to rest. We don't know what the legal ramifications are for<br/>
+someone downloading and having leaked code, as the party that<br/>
+maintains copyright ownership of that code might still try to claim<br/>
+Trade Secrecy on information contained in the sources in a court of<br/>
+law. It is our point of view that the source code leaks of Windows<br/>
+have been spread to a broad enough audience that it would be<br/>
+impossible to claim the product is still under Trade Secrecy. Because<br/>
+of this we are not banning any developer who might have had access to<br/>
+leaked sources from contributing to ReactOS, however they are being<br/>
+limited as to what area they can contribute. Copyright law still<br/>
+applies to all leaked Windows sources and no one in ReactOS may copy<br/>
+code from a Windows source leak and try to apply it to code in the<br/>
+ReactOS tree.<br/>
+ <br/>
+We know of four developers who have had access to leaked sources prior<br/>
+to working on ReactOS and while they no longer have copies of the<br/>
+source code in question, each of the developers have told us in<br/>
+private which sections of the sources they were exposed to. As such<br/>
+the project has amending the IP document as a fourth step of<br/>
+protection<br/>
+ <br/>
+4) any developer that had access to leaked sources is baned from<br/>
+contributing code to the project for any of the modules that are the<br/>
+same as leaked sources they examined.<br/>
+ <br/>
+So to clarify that, lets say someone saw some of the leaked Windows<br/>
+source code in version.dll, then they would be unable to contribute<br/>
+code to the ReactOS project for that dll.<br/>
+ <br/>
+It is our hope that a court case will arise and declare Microsoft's<br/>
+Windows code is no longer under Trade Secret protection so these<br/>
+developers who did have access to some of the leaked sources will be<br/>
+free to contribute again to all sections of the project.<br/>
+ <br/>
+One final note, this audit of the code is going to take a long time.<br/>
+It could take years, but it will happen, this project will come out<br/>
+better than it was before. I don't believe anything anyone has done<br/>
+while working on this project was really wrong. Every decision has<br/>
+three possibilities, being moral, ethical and or legal. Sometimes the<br/>
+law in itself is unethical and immoral. If people made mistakes and<br/>
+there was a violation of the law, I question the justice of the law<br/>
+and or anyone that would try to prosecute any of the developers who<br/>
+just want the freedom to learn and create a more free system.<br/>
+<br/> 
+--<br/>
+Steven Edwards - ReactOS and Wine developer
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/project-news/reset-reboot-restart-legal-issues-and-long-road-03.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

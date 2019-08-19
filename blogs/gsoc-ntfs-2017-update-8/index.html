@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GSoC NTFS 2017 Update 8 | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="GSoC NTFS 2017 Update 8" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/gsoc-ntfs-2017-update-8//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="GSoC NTFS 2017 Update 8 logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="GSoC NTFS 2017 Update 8 logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">GSoC NTFS 2017 Update 8 - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/gsoc-ntfs-2017-update-8'>gsoc-ntfs-2017-update-8</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>GSoC NTFS 2017 Update 8</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">coderTrevor</a> | August 3, 2017</p>
+
+						<div id="post-content">
+							
+<p>Hello World!</p>
+
+<p>I know it hasn't been very long since the last update. The last few updates were late, but I'm trying to get back into good habits like committing often and blogging on time. :)</p>
+
+<p>Last time, I talked about how ReactOS was corrupting my test volume by trying to create files I wasn't ready for it to create. I was indeed able to fix that by booting into Windows and creating the folder and files ReactOS kept trying to make. Now I can focus on the file-creation scenario I'm testing.
+</p>
+
+<p>I came across one more bug that was making things REALLY difficult for me. This one was corrupting memory, and making ReactOS unstable. The worst thing about a bug like this is it's difficult to find and more-or-less impossible to ignore. I'd be testing some code I just wrote and get a bugcheck. Was that because the code I just wrote isn't working, or is that memory corruption interfering? Usually, it was the latter.
+</p>
+
+<p>I found the cause of the corruption today (I'm 95% sure) and now I can move forward. I feel kind of stupid though, because the underlying cause is something I've encountered at least two other times while working on this project, and it's always been my biggest stumbling block.</p>
+
+<p>This time, the problem was related to the way NTFS_ATTR_CONTEXT is structured.  The driver relies on this structure extensively to track information associated with an attribute record. The struct has a member, Record, which is a copy of the attribute record itself. The problem lies in the fact that when an NTFS_ATTR_CONTEXT is created, its Record member is only large enough to store the attribute record. If I want to update the attribute on disk and make it larger, I can't reuse the existing context, because its Record member won't have enough memory to store the new attribute record (and of course, memory gets corrupted if you try). Last year, I was running into a very similar problem that was keeping me from migrating resident attributes to non-resident when the file size changed.</p>
+
+<p>On a more general level, I think I've been running into this problem (in one form or another), because I'm reluctant to really take ownership of the code and make "drastic" changes. What I mean, is that when I'm presented with a limitation in a data structure like this, instead of changing the structure, I tend to try to work around what's already there. I think my reluctance to make broad changes stems from a few things: 
+</p>
+<ul><li>Overestimating how difficult or time-consuming it will be to refactor existing code</li>
+
+<li>Underestimating how easy (or even possible) it will be to work around the current design</li>
+
+<li>Inexperience with developing software on a team and not wanting to "step on anyone's toes" by changing the existing code too much</li>
+
+<li>Most of my programming experience has been with closed-source API's or proprietary game engines like Unity, where changing data structures isn't an option, and working around a problem is the norm.</li></ul>
+
+<p>It reminds me of working on my car. Many times I'd be presented with a choice between removing a part that was in the way of what I was interested in, or leaving the part alone and working around it. All the times I've tried to leave everything alone I've regretted it. The times I removed a few extra bolts, and got crap out of my way, I was surprised at how little extra work it was, and how fast the remaining job went. Maybe you don't need to remove the alternator to remove the water pump, but if the alternator is in the way, it's better to invest a little extra time upfront and just move it instead of reaching around it awkwardly. Maybe I don't need to update data structures that don't suit my purposes; I can work around them awkwardly, but it's much better to just invest the extra time upfront in restructuring them to suit my purpose.</p>
+
+<p>In hindsight, it's totally obvious to me that the structures I'm working with should be updated and expanded. They were developed with reading files in mind; their creators hadn't intended for them to support what I'm trying to do with them.</p>
+
+<p>Sorry for the boring, all-text update. What do you say I show you some screenshots of new progress next week? I have a good feeling about it! :)</p>
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/gsoc-ntfs-2017-update-8.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

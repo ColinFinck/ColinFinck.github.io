@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Decorating the shell tree | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="Decorating the shell tree" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/decorating-shell-tree//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Decorating the shell tree logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Decorating the shell tree logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">Decorating the shell tree - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/decorating-shell-tree'>decorating-shell-tree</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>Decorating the shell tree</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">gigaherz</a> | December 24, 2014</p>
+
+						<div id="post-content">
+							
+<p>Hello everyone,</p>
+<p>Because Christmas was so close to the weekend, I decided to delay the report a few days, and release it on time for the holidays, and this way include in the report everything that has happened over the weekend and the beginning of this week.</p>
+<p>The past week began by reviewing some patches that were pending for a LONG time. Sadly, most of them were too bit-rotten to be applicable as-is, so I had to contact the patches’ authors and request an update. Annoyingly, the whole process took a much longer time than it would seem from this explanation. Fortunately, some of the patches DID apply, such as the fix for the small icons in the shell.</p>
+<p>After that, I turned my eyes on a problem with the start menu, where the shell menus wouldn’t properly close when clicking on windows not belonging to the taskbar. This issue took quite a lot of time to get right, due to the complexity of the shell menu hierarchy, but I believe that the improvements I made to the focus manager component will improve the stability and behaviour of the shell menus overall. The way the code worked before, was that it attempted to set a capture on the active menu window, and it would remove that capture and apply a new capture when the mouse moved from one menu to another. On top of that, it wouldn’t always set the initial capture correctly, so the result was that the capture didn’t always detect when the mouse was being clicked outside the menus. With the help of Giannis, we decided to follow Windows’ behaviour, and only set the capture on the initial shell menu, and never move it to any child menus. This works because the focus manager takes care of hot-tracking the menu items, instead of making use of the toolbar’s own code for it.</p>
+<p>After fixing that, and while I was already looking at the start menus, I looked at the keyboard navigation, which I hadn’t tested in a long time. It turns out, it was already working quite well, but only as long as the start menu was open by clicking, and not with the windows key. In the latter case, the keyboard focus would remain on the parent, so the parent would receive the keyboard notifications instead of the start menu.</p>
+<p>To fix this, we wanted to investigate which method Windows used, but after some time trying to find the right method, I decided to just put it in the focus manager, so that when the first menu is open, the parent of that menu is activated, and when the last menu closes, the previously foreground window is restored. Although the code is not the best, it will do for now.</p>
+<p>I ended the week by going through some small issues. Among these, was the initialization of netshell’s notification icon manager class. This class implements all the interfaces and protocols used by Shell Service Objects, but for some reason it’s initialized through stobject.dll instead of being registered in the SSO key in the registry. To fix that, I could have gone in one of two directions. Either I made netshell register itself as an SSO, or I followed Windows’ choice and initialized it through stobject. I couldn’t see any reason not to do the former, but in the end I decided to follow Windows and do it from netshell. We don’t have any reason to do so, but if we ever decided to place netshell.dll or stobject.dll from windows in ReactOS, it may be best this way.</p>
+<p>Over the weekend, I rested mostly, but then I picked up the “small issues” task on Monday, by going through the list of issues in JIRA, and triaging. A few were already fixed, others needed more information, and some others were ready to fix.</p>
+<p>I don’t know if I will be able to fix anything else this afternoon before all the guests get home for Christmas eve, but for now, this is all.</p>
+<p>Merry Christmas to everyone, and see you all later after the holidays (possibly next year ;P).</p>
+<p>Discussion: <a href="https://reactos.org/forum/viewtopic.php?f=2&amp;t=13881">https://reactos.org/forum/viewtopic.php?f=2&amp;t=13881</a></p>
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/decorating-shell-tree.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ReactOS Auditing Progress - Status 03/2006 | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="ReactOS Auditing Progress - Status 03/2006" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/project-news/reactos-auditing-progress-status-032006//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="ReactOS Auditing Progress - Status 03/2006 logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="ReactOS Auditing Progress - Status 03/2006 logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">ReactOS Auditing Progress - Status 03/2006 - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/project-news'>project-news</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/project-news/reactos-auditing-progress-status-032006'>reactos-auditing-progress-status-032006</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>ReactOS Auditing Progress - Status 03/2006</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">frik85</a> | March 10, 2006</p>
+
+						<div id="post-content">
+							
+<h2>ReactOS Auditing Progress - Status 03/2006</h2>
+<p>A lot of things happened in january and february 2006. This news issue's goal is to sum up what has been happening in the past few weeks. If you want to stay tuned, visit the <a href="http://blogs.reactos.org">ReactOS Blogs</a> from time to time. And do not forget to add the ReactOS News Feed to your <a href="http://en.wikipedia.org/wiki/RSS_%28file_format%29">feed reader or aggregator</a>.<br /><i>A lot of information of this news issue came from <a href="http://www.reactos.org/serendipity/index.php?/archives/26-ReactOS-audit-status.html">Ged Murphy's blog entry</a>, thank you for clearing up of some questions.</i></p>
+
+<h3>ReactOS Auditing Frequently Asked Questions</h3>
+<p>If you have still questions after you read this FAQ then please <a href="http://www.reactos.org/forum/">visit the ReactOS Forum</a>.</p>
+
+<h4><i>What is ReactOS? Is ReactOS based on Microsoft® Windows®? And so on ...</i></h4>
+<p>Please visit the <a href="[#link_about_userfaq]">ReactOS FAQ page</a> for further information about ReactOS.</p>
+
+<h4><i>Why does the ReactOS developers audit their source code? Almost all other well known operating systems aren't (fully) audited either and are still in use.</i></h4>
+<p>In order for the project to stand the alpha-phase time, it must be 100% legal. Maybe some areas of the audit are a bit of an over reaction (<a href="http://www.reactos.org/xhtml/en/news_page_14.html">more information</a>), but they have <a href="http://www.reactos.org/xhtml/en/news_page_15.html">to be addressed</a>. Hiding or even ignoring things does not make them go away. The next time someone questions the legality of our code, we can "throw" the <a href="http://www.reactos.org/wiki/index.php/Audit">audit (documents)</a> back at them.</p>
+
+<h4><i>Why has the audit progress bar been stuck on 15% for the past few weeks?</i></h4>
+<p>When the ReactOS developer team originally discovered that the ReactOS code base may contain code which had been reversed outside of US policy, we choose to carry out an audit by locking the current repository and opening a new one in which all audited code would be placed. The script which displays the audit status on the website was written based upon some methods in this repository and was set to update daily.<br />
+This repository is now dead (<a href="http://www.reactos.org/forum/viewtopic.php?t=1675">see voting</a>), but the audit script is still running on that directory, hence, it’s been stuck at 15%. The old script will get replaced this weekend (see FAQ entry below). </p>
+
+<h4><i>Why is the outdated auditing progress bar still on the website frontpage? And what is the current auditing process.</i></h4>
+<p>The auditing process has changed a bit because it was realised by many of the devs that the original reaction had been a slight over-reaction. The only people raising questions about the methods of our reversing, came from the ReactOS developers (not from outside). 
+Two votings later, the old repository is reopened for anonymous download with some new restrictions on the development side.
+The area which does effect is the development side. Changes cannot be made to files which are locked. In order to remove the lock, the code must pass an audit. The hope is that the audit will be carried out quicker via this method.</p>
+
+<h4><i>So where are we at now? - the current auditing status</i></h4>
+<p>The original repository is now back online and pretty much all the code is currently locked. The slow process of auditing and unlocking has now officially begun, however a big chunk of our code can bypass the audit.</p>
+
+<h4><i>When will be the next ReactOS release? </i></h4>
+<p>The ReactOS Development Team expect ReactOS 0.3 to be released soon. 
+The new method we have taken will allow development to continue alongside the audit. Each consecutive release will have more audited code than the previous until we reach a certain release, where all code passed the audit.</p>
+
+<h4><i>What about the progress bar?</i></h4>
+<p>Ged Murphy wrote a new audit script for the new/old repository which is much more accurate than the previous one. This will be put into place this weekend.</p>
+
+<h3>Votings</h3>
+<p>We had two votings, in the last two months:</p>
+<ul><li><b><a href="http://www.reactos.org/forum/viewtopic.php?t=1675">ReactOS Reactivation Plan (2006-02-09 to 2006-02-16)</a></b><br />
+<br />
+Plan A - "current", 22% [4] <br />
+Plan B - "proposed", 77% [14] <br />
+Total Votes: 18<br />
+<br>
+<br />
+
+</li>
+<li><b><a href="http://www.reactos.org/forum/viewtopic.php?t=1729">Code audit method (2006-02-24 to 2006-03-03)</a></b><br />
+<br />
+"Devs must take it upon themselves to audit the code", 46% [6] <br />
+"Code is SVN-locked until it has been audited", 53% [7] <br />
+Total Votes: 13</li></ul>
+
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/project-news/reactos-auditing-progress-status-032006.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

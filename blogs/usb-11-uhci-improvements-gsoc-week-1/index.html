@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>USB 1.1 UHCI improvements GSoC - Week 1 | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="USB 1.1 UHCI improvements GSoC - Week 1" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/usb-11-uhci-improvements-gsoc-week-1//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="USB 1.1 UHCI improvements GSoC - Week 1 logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="USB 1.1 UHCI improvements GSoC - Week 1 logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">USB 1.1 UHCI improvements GSoC - Week 1 - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/usb-11-uhci-improvements-gsoc-week-1'>usb-11-uhci-improvements-gsoc-week-1</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>USB 1.1 UHCI improvements GSoC - Week 1</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">VardanM</a> | May 30, 2016</p>
+
+						<div id="post-content">
+							
+<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; line-height: 1.38; white-space: pre-wrap; background-color: transparent;">Hi! My name is Vardan and during this GSoC I&#39;ll work on UHCI driver improvements.</span></p><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</p><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</p><h3><strong><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; line-height: 1.38; white-space: pre-wrap; background-color: transparent;">Why ROS?</span></strong></h3><p><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap; line-height: 1.38; background-color: transparent;">Now, when human is becoming more and more dependent on computer it becoming critical to have open-source OS on it. You can feel really secured only when you&lsquo;re able (allowed) to see any part of OS which can control all your data. For the student who is studying computer science, the best choice was Linux (especially when classroom computers working only under it). I have dived into Linux kernel and have done some investigation of it, especially on USB stack. Kernel development became my passion, because here you&rsquo;re understanding the basics and becoming a really generic programmer who can easily switch to any sphere of programming market. Despite the fact that before this time I was worked only in Linux environment, I don&rsquo;t think that I am true Linuxoid, I think I am &ldquo;openSourceOSoid&rdquo; who think that he can do something to contribute open source. After some investigation of open source OS field I&rsquo;ve found that there is very few choice between Linux and Linux :D. Also I have found ReactOS, but I never dared to dig deeper into it. Maybe because NT internals were absolutely new for me. So I was only following some blogs and publications about ROS. The main place of info was &lsquo;habr&rdquo; (Russian-language site). When I saw that ROS is accepted for GSoC it was the pulse for me, I say to myself &ldquo;It&rsquo;s time to start investigation of NT kernel !!! &rdquo;.</span></p><p><strong><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap; line-height: 1.38; background-color: transparent;">Status</span></strong></p><p><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap; line-height: 1.38; background-color: transparent;">In this post I have provided my status for community bonding period and week of coding. The points are described as steps, next reports will be much shorter.</span></p><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; color: rgb(0, 0, 0); vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Setup working environment for ROS.</span></span></p></li></ul><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; margin-left: 40px;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; font-family: Arial; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Installed RosBE, compiled and ran latest version of ROS codes on VBox and Vmware virtual machines (there is different USB 1.1 controllers). Investigated ROS debugging methods. Setup debugging environment for ROS. Faced issue with command line debugger, it switches to debug mode but screen freezes in GUI and no terminal is seen. Anytime I was able to run debugging commands on freezed VM and saw them in putty connected to VM via COM port.</span></span></p><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; color: rgb(0, 0, 0); vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Setup working environment for Windows 2k3.</span><br class="kix-line-break" /><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Prepared vdisk images with retail and partly checked versions of 2k3. Done </span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">initial testing of USB drivers from ROS in Win 2k3 virtual environment on </span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Vmware and VBox.</span></span></p></li><li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; color: rgb(0, 0, 0); vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Participated in ReactOS team&rsquo;s monthly meeting in IRC.</span><br class="kix-line-break" /><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Introduced myself and my project. Got familiar with reporting style of ROS </span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">community.</span></span></p></li><li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; color: rgb(0, 0, 0); vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Prepared test plan and sent it for review.</span></span></p></li></ul><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; margin-left: 40px;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; font-family: Arial; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">I have planned to test ROS host controller drivers by injecting them separately into win2k3 USB stack. I have prepared smoke test spreadsheets for each controller (OHCI,UHCI,EHCI) and sent it to Thomas for review. He suggested to inject ros-usbhub too. So we decided to do both with usbhub injected too and with only usb?chi. This will allow to have overview of </span></span><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">inconsistencies within ROS&#39;s hcd-hub pair and same pair of 2k3.</span></p><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; color: rgb(0, 0, 0); vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Investigated Windows NT architecture.</span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"> (<b>The biggest part of time</b></span><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">)</span></span></p><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li style="list-style-type: circle; font-size: 14.6667px; vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Concepts and Tools</span></span></p></li><li style="list-style-type: circle; font-size: 14.6667px; vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">System Architecture</span></span></p></li><li style="list-style-type: circle; font-size: 14.6667px; vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">System Mechanisms</span></span></p></li><li style="list-style-type: circle; font-size: 14.6667px; vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Management Mechanisms</span></span></p></li><li style="list-style-type: circle; font-size: 14.6667px; vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Startup and Shutdown</span></span></p></li><li style="list-style-type: circle; font-size: 14.6667px; vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Processes, Threads, and Jobs</span></span></p></li><li style="list-style-type: circle; font-size: 14.6667px; vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Memory management</span></span></p></li><li style="list-style-type: circle; font-size: 14.6667px; vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">I/O subsystem</span></span></p></li></ul></li><li dir="ltr" style="list-style-type: disc; font-size: 14.6667px; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700; vertical-align: baseline; background-color: transparent;"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-18efaa1b-0178-5adb-d5f8-3a8d0a872b6b"><span style="font-size: 14.6667px; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Done ROS&rsquo;s USB host controller drivers testing,</span><br class="kix-line-break" /><span style="font-size: 14.6667px; font-weight: 400; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Tested ROS&rsquo;s OHCI, UHCI and EHCI drivers. Tested by driver injection into Win2k3 usb s</span><span style="font-size: 14.6667px; font-weight: 400; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">tack see corresponding spreadsheets below. Here is presented resulsts only for ROS&#39;s hcd injection int 2k3 stack, without hub. Results for hcd-hub pair injection will be presented in next post.</span></span><img alt="Image" class="imgp_img" src="/sites/default/files/imagepicker/49145/Testing_on_Win2k3-page-001.jpg" style="font-size: 14.6667px; width: 640px; height: 284px; background-color: transparent;" /><img alt="Image" class="imgp_img" src="/sites/default/files/imagepicker/49145/Testing_on_Win2k3-page-002.jpg" style="font-size: 14.6667px; line-height: 1.38; width: 600px; height: 302px; background-color: transparent;" /><img alt="Image" class="imgp_img" src="/sites/default/files/imagepicker/49145/Testing_on_Win2k3-page-003_0.jpg" style="font-size: 14.6667px; width: 600px; height: 254px; background-color: transparent;" /></p></li></ul>
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/usb-11-uhci-improvements-gsoc-week-1.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

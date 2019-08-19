@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ReactOS RShell | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="ReactOS RShell" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/reactos-rshell//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="ReactOS RShell logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="ReactOS RShell logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">ReactOS RShell - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/reactos-rshell'>reactos-rshell</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>ReactOS RShell</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">gigaherz</a> | March 10, 2014</p>
+
+						<div id="post-content">
+							
+<p>I began the week by testing the progress of the start menu in ReactOS.</p><p><img alt="Image" class="imgp_img" height="346" src="/sites/default/files/imagepicker/2924/ReactOS-2014-03-02-20-24-43_0.png" width="412"></p><p>You may remember this screenshot from last weekend’s report. In it, you can see the results of implementing vertical menus in a different, more documented, way. This method requires more work to be done per item, to make them all wrap into a new row, but it is supported by the Wine toolbar implementation ReactOS uses.</p><p>If you are even slightly OCD, you will have noticed that the arrows used to mark a menu as having a submenu are misaligned. This is not a bug in the code. The replacement Marlett font we have currently in ReactOS has the glyph misaligned. Below is a drawing test where I was testing the alignment flags of the text drawing functions. As you can see, all the alignment texts show up where you’d expect them, but the glyph is not vertically centered in the character space.</p><p><img alt="Image" class="imgp_img" src="/sites/default/files/imagepicker/2924/ReactOS-2014-03-03-01-16-30.png" style="width: 700px; height: 130px;"></p><p>Aside from this minor visual glitch, you can see in the first screenshot that items are missing, and you can’t see any more submenus because they did not open. After investigating further, I traced the missing items to ReactOS returning unexpected flags in the MENUITEMINFO-&gt;fType member. I discovered that the ReactOS menu code (which is based on Wine’s) misuses the MF_POPUP flag as an indicator of the menu having a submenu attached to it, while it’s clear from the MSDN description of the MENUITEMINFO structure that the hSubMenu member already has enough information: this member is NULL if the menu does NOT have a submenu.</p><p>Although it wasn’t necessary, I wrote a new method of deciding the type of the menu items in rshell, so that I could verify that aside from this flag issue, the items were correct. That made me notice that not only the menu items were detected wrongly, but the button IDs, which the shell relies on to show the proper icons in each item, were also being given a wrong value, for all items marked as having a submenu. It turns out the two issues were related.</p><p>The ancient method of adding items to a menu involved using AppendMenu and/or InsertMenu. These two functions use the MF_POPUP flag to indicate that the ID parameter will not be an id, and instead will be repurposed as a submenu handle. In modern versions of windows (win2k and up), the InsertMenuItem function was introduced, together with some other related functions, which work with a MENUITEMINFO structure. In this structure, the MF_POPUP flag is not used anywhere, and it has separate fields for the id (wID), and the submenu handle (hSubMenu). Because of the wrong assumption that the item ID was reused as the submenu handle, the resource loading code was wrongly setting the submenu handle in the wID field.</p><p>I fixed the ReactOS menu code (including the Wine side of it), so that the functions behave as expected, both in how they store the popup information, and how they build the menus when they are read from an application’s resource data. I took the menu changes and applied them on top of the trunk code, so that they can be reviewed more formally, and possibly the result should eventually be sent to Wine. The code is at: <a href="https://jira.reactos.org/browse/CORE-7966">CORE-7966</a></p><p>The next issue in the list was a problem where the submenus were not showing up. This turned out to be a typo in how the menus were constructed. At this point, the start menu in ROS looked more like this:</p><p><img alt="Image" class="imgp_img" src="/sites/default/files/imagepicker/2924/ReactOS-2014-03-03-18-52-21.png" style="width: 700px; height: 525px;"></p><p>A lot better, but the looks aren’t all. Things have to work also, and they were not working as expected.</p><ol><li>Opening some submenus caused access violation exceptions.</li><li>Items did not react to clicks. (with exceptions)</li><li>The separators weren’t drawing correctly.</li><li>Some of the items don’t have the expected icon.</li><li>The static items (the items below the first separator in the start menu) don’t have an icon until you show the menu a second time.</li></ol><p>I tried to fix the first issue in the list, which I knew had to be some sort of corruption, but I couldn’t trace it beyond a call to IShellFolder-&gt;GetAttributesOf(). After many hours, I left the issue aside, and focused on other issues.</p><p>I traced the clicking issue to the SHInvokeDefaultCommand function, which calls SHInvokeCommand. The latter was implemented wrongly, and Thomas Faber helped me write a more correct version. Although it now works better, for some reason the items only get executed after a submenu of the item’s menu has been shown. Clicking on any item right away will close the menu, but the application will not launch. I put that in the queue of unfixed issues, and moved on.</p><p>I continued by fixing the separator drawing so that horizontal separators would draw. The issue itself was one small typo in TOOLBAR_LayoutToolbar, although I also changed TOOLBAR_DrawItem so that separators have the same padding as button items, instead of taking up 100% of the width.</p><p>I didn’t want the corruption issue to get “cold”, so I went back to it, and while trying to explain the issue to a flatmate, I realized one small but important detail: the m_shellFolder class member was using a pointer, instead of a safe CComPtr&lt;&gt;. This meant that the class pointed by this field could have been destroyed at any moment, and that’s probably what happened in ReactOS. Using CComPtr&lt;&gt; instead of a plain pointer fixed the crashing issue. I do not know how could it not crash in Windows, but the code was definitely wrong.</p><p>With that big issue out of the way, the bug list looks closer to this:</p><ol><li>Clicking an item only works after opening a submenu of the item’s menu.</li><li>The shell32 icon list does not match Windows Server 2003 SP1.</li><li>The static button icons don’t draw on the first time the menu is displayed.</li></ol><p>Since I couldn’t easily fix any of those issues, I took a break from the start menu, and I dedicated some time to improving my testing workflow. With that goal, I changed the effective names of our two explorers so that the older explorer became explorer_old, and the new explorer became simply explorer.exe. This way, when compiling shell-experiments, the result is a ReactOS that shows the results of those experiments right away, without having to kill a process and launch another.</p><p>Thinking of the near future, I “hackplemented” rudimentary support for explorer-new to open a browser window when a folder shortcut is launched from the desktop, such as for the “My Computer” icon.</p><p>Also, I took the chance to make browseui make use of the rshell MenuBand, and I spent all of Friday trying to get this menuband to function when running the “filebrowser.exe” program Giannis wrote.</p><p>The results are not yet functional, but some progress was made, both in Reactos:</p><p><img alt="Image" class="imgp_img" src="/sites/default/files/imagepicker/2924/ReactOS-2014-03-07-12-00-47.png" style="width: 800px; height: 500px;"></p><p>and in Windows:</p><p><img alt="Image" class="imgp_img" src="/sites/default/files/imagepicker/2924/Folder.png" style="width: 800px; height: 579px;"></p><p>Until next weekend!</p>
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/reactos-rshell.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

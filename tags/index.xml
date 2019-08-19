@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ReactOS Website</title>
+    <link>https://colinfinck.github.io/tags/</link>
+    <description>Recent content in Tags on ReactOS Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://colinfinck.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>0.4.9</title>
+      <link>https://colinfinck.github.io/tags/0.4.9/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/0.4.9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cc</title>
+      <link>https://colinfinck.github.io/tags/cc/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/cc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mm</title>
+      <link>https://colinfinck.github.io/tags/mm/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/mm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>release</title>
+      <link>https://colinfinck.github.io/tags/release/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/release/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>self-hosting</title>
+      <link>https://colinfinck.github.io/tags/self-hosting/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/self-hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://colinfinck.github.io/tags/shell/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zipfldr</title>
+      <link>https://colinfinck.github.io/tags/zipfldr/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/zipfldr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>0.4.8</title>
+      <link>https://colinfinck.github.io/tags/0.4.8/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/0.4.8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drwatson</title>
+      <link>https://colinfinck.github.io/tags/drwatson/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/drwatson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nt6</title>
+      <link>https://colinfinck.github.io/tags/nt6/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/nt6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ntfs</title>
+      <link>https://colinfinck.github.io/tags/ntfs/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/ntfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taskbar</title>
+      <link>https://colinfinck.github.io/tags/taskbar/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/taskbar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>0.4.7</title>
+      <link>https://colinfinck.github.io/tags/0.4.7/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/0.4.7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>filesystems</title>
+      <link>https://colinfinck.github.io/tags/filesystems/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/filesystems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rapps</title>
+      <link>https://colinfinck.github.io/tags/rapps/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/rapps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>usb</title>
+      <link>https://colinfinck.github.io/tags/usb/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/usb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>announce</title>
+      <link>https://colinfinck.github.io/tags/announce/</link>
+      <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/announce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>call</title>
+      <link>https://colinfinck.github.io/tags/call/</link>
+      <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/call/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gsoc</title>
+      <link>https://colinfinck.github.io/tags/gsoc/</link>
+      <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/gsoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>students</title>
+      <link>https://colinfinck.github.io/tags/students/</link>
+      <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/students/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hello</title>
+      <link>https://colinfinck.github.io/tags/hello/</link>
+      <pubDate>Fri, 17 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/hello/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>https://colinfinck.github.io/tags/network/</link>
+      <pubDate>Fri, 17 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>social</title>
+      <link>https://colinfinck.github.io/tags/social/</link>
+      <pubDate>Fri, 17 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/social/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>telegram</title>
+      <link>https://colinfinck.github.io/tags/telegram/</link>
+      <pubDate>Fri, 17 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/telegram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>revamp</title>
+      <link>https://colinfinck.github.io/tags/revamp/</link>
+      <pubDate>Mon, 08 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/revamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>website</title>
+      <link>https://colinfinck.github.io/tags/website/</link>
+      <pubDate>Mon, 08 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contributions</title>
+      <link>https://colinfinck.github.io/tags/contributions/</link>
+      <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/contributions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>office</title>
+      <link>https://colinfinck.github.io/tags/office/</link>
+      <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/tags/office/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

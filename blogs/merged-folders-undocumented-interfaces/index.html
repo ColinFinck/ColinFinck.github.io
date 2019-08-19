@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Merged Folders and undocumented interfaces | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="Merged Folders and undocumented interfaces" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/merged-folders-undocumented-interfaces//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Merged Folders and undocumented interfaces logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Merged Folders and undocumented interfaces logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">Merged Folders and undocumented interfaces - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/merged-folders-undocumented-interfaces'>merged-folders-undocumented-interfaces</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>Merged Folders and undocumented interfaces</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">gigaherz</a> | July 12, 2014</p>
+
+						<div id="post-content">
+							
+<p>Hello, and welcome to my weekly report. I apologize for not having a report last weekend, so this week’s report will be longer than usual.</p>
+<p>Reading the issues in the community-powered Shell TODO List got me thinking about some issues that I previously thought were too complex for phase 1. Biggest of all, was the implementation of the CMergedFolder class structure. This set of classes is almost completely undocumented, and I suspect it has multiple features that don’t really fit together.</p>
+<p>Among them, the primary purpose of the merged folder is the ability to aggregate the contents of multiple shell folders into one virtual folder that includes items from all of the sources, and also merges the child items of the same name into one virtual item. This allows the start menu to show the items from both the common start menu, and the user start menu.</p>
+<p>But the start menu also appears to use a different feature of these merged folders, where it “removes” the Programs item from the list, and takes the contents of the merged Programs to use as the contents of the Programs static menu item (the one that appears below the separator).</p>
+<p>Ideally, the implementation should replicate all the interfaces used by Windows, but I started thinking we don’t really need such a complex implementation right now. Even if it’s just rudimentary, almost a skeleton of what it is supposed to be, I decided to write a basic implementation of the CMergedFolder class, which exposes the essential interfaces of a shell folder (that is, IShellFolder and IShellFolder2), and allows the start menu to show the combined view as expected by the users. If (or when) some program decides to use these undocumented interfaces, then we’ll know it’s necessary to implement them, and we’ll have the justification of working on it. For now, having the placeholder for the better implementation feels like the better choice.</p>
+<p>In my implementation, I take the items from the two sources, sorted by the default sorting algorithm, and add them to a common list. If two items are equal, then I take the info from one of them, and mark the item as shared, so that later I can tell when to use a merged folder for the contents, if the item happens to be a folder.</p>
+<p>The implementation should be working perfectly, and it does work well in Windows, but for some reason that escapes my comprehension, the same exact piece of code that works for normal items, fails to work for the SAME items when they are given to the start menu by the merged folder.</p>
+<p>Here is why I’m baffled: The start menu has no problems obtaining the name of the items, no problems obtaining the IExtractIcon interface it needs to get the icon, no problems obtaining a context menu for the items, <strong>but</strong> this context menu is not actually for the given item. At some point, even though I’m giving the function the same exact data it would use without merging folders, the context menu goes wrong, and contains items belonging either to the parent folder, or to the desktop folder.</p>
+<p>While I was trying to debug this, I also tried to implement the “dragging” navigation on menus. That is, where you can press the button down over the menubar, then keep it pressed while you move to a menu item in a submenu, and finally release over the menu item to activate it. This required me to change some of the logic of how I treat clicks, and I also had to disconnect the click code from the WM_COMMAND message from the toolbar, since we don’t want to handle the clicking internally anymore. The code is still not fully complete, but it seems that this change should also solve a few other issues once the navigation is working reliably.</p>
+<p>I moved on to the issue where tray icons weren’t showing. I decomposed the issue into three different possible issues: first, applications used to show tray icons before, but weren’t showing them anymore; second, the network shell extension manages both the tray icon, and the network connections virtual folder; and lastly, some icons are managed by a different kind of shell extensions, called Shell Service Objects.</p>
+<p>First, I fixed a bug in showing tray icons, regardless of where they came from. It was a typo I made when improving the code structure, where I misinterpreted the contents of a pointer. This had the nice effect of also allowing the network icon to show, which means the network connections shell extension is being loaded.</p>
+<p>Last, are the shell service objects. Looking at the existing code from the old explorer, I noticed that these objects are just objects that implement IOleCommandTarget, and receive a specific command used to initialize and shutdown the objects. I verified that this was right, by testing the implementation in windows.</p>
+<p>While I was touching the tray icons, I decided to implement support for displaying the tooltip text. To achieve some rudimentary tooltip support, I had to change the way mouse input was handled, so that I could track when the mouse is over a tray icon. I call the support rudimentary, because windows shows the tooltips centered on the icon and above it, while my implementation so far shows them at the cursor.</p>
+<p>After the weekend, I went back to the merged folders. It took me many long hours but I finally traced the issue to a function that took a stack pointer “for granted”, which only happened to work for the typical usage of this function because it’s common to keep all the usage of the resulting object within the same function call, but in any other case, it would end up accessing a no longer valid stack pointer that could contain any data.</p>
+<p>With the merged folders working, I began investigating how Windows filtered the Programs item from the top. Later when I spoke with Giannis about my lack of luck, he suggested I may be looking in the wrong place. It turns out in Windows, it’s the start menu objects that do the filtering: the CMenuSFToolbar object sends a callback to the CStartMenuCallback object, which returns either S_OK or S_FALSE depending on if it wants the item shown, or hidden. Implementing this callback was quick and painless, since I already had most of the supporting code written for other callbacks, and all I had to do was add a condition to the item enumeration in the menu toolbar.</p>
+<p>With this working, it meant the start menu now properly shows the Programs folder in the Programs menu item, and both the top items and the programs folder (and any common folder such as Startup), now shows items from both the user start menu, and the common one.</p>
+<p>Now that it was working, all that was left was make it more cross-compatible with Windows, which meant implementing the undocumented IAugmentedShellFolder interface. Luckily, the interface was simpler than I expected, and the information of the methods in the virtual function table, enhanced by the info in the PDB files, allowed me to give those methods a name, and their parameters a type.</p>
+<p>I had to do some deduction to understand what each parameter meant, but with this interface, now I can switch between our merged folder, and the windows one, to ensure that the items match.</p>
+<p>To wrap this up, here is an image of the taskbar and start menu, as seen in ReactOS in the latest version of the code. Until next week!</p>
+<p><a href="/sites/default/files/imagepicker/2924/ReactOS-2014-07-12-01-14-46.png" target="_blank" title="Start menu with merged Programs"><img alt="Start menu with merged Programs" class="imgp_img" src="/sites/default/files/imagepicker/2924/ReactOS-2014-07-12-01-14-46.png" style="width: 640px; height: 480px;"></a></p>
+<p>Comments opened in : https://reactos.org/forum/viewtopic.php?f=2&t=13477 </p>
+
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/merged-folders-undocumented-interfaces.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

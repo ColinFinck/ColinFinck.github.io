@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Post-Incrementing the C | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="Post-Incrementing the C" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/post-incrementing-c//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Post-Incrementing the C logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Post-Incrementing the C logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">Post-Incrementing the C - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/post-incrementing-c'>post-incrementing-c</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>Post-Incrementing the C</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">gigaherz</a> | November 10, 2014</p>
+
+						<div id="post-content">
+							
+<p>Hello again, people.</p>
+<p>Wow so another week has passed, and the whole weekend too. I feel a bit like I was sucked into a temporal distortion, because I can’t really tell where all these hours have gone. Heck, I almost forgot to write the report! Thankfully, the cold I spoke about last week, it didn’t complicate itself, so I have been able to work over the week.</p>
+<p>I suppose many of you didn’t wait for the surprise and looked at the commit logs, or read the comment thread for the “spoilers”. For the rest, or if you want the details about it, here it comes.</p>
+<p>Ever since I started working on the project, I have been getting a very clear opinion on COM, and part of that opinion, is that it sucks to work on COM from C. Since C doesn’t have its own integrated OOP features, using COM means manual reference counting, and having to manually access the virtual function tables to reach the method pointers. For the former, there isn’t anything to make it better, although for the latter, there are a set of macros that hide this virtual pointer access into a slightly more bearable syntax. But overall, while adding a new interface to an existing class, or creating a whole new class, is straightforward in C++, doing the same in C requires a large number of different steps.</p>
+<p>Since most of the work I have been doing requires implementing new interfaces and even adding whole new classes, I was glad that most of the shell DLLs had already been converted to C++, but that wasn’t true for explorer-new itself.</p>
+<p>Some weeks ago (a couple months or so?), I decided to spend the weekend doing a tentative C++ conversion. This was initially just a 1:1 conversion of the filenames so that they ended in .cpp, and fixing up the pseudo-OOP syntax into proper C++ classes. This all happened in my spare time, and it was never counted in the work log, because it wasn’t one of my assigned tasks. Regardless, I really wanted it to happen.</p>
+<p>After some weekends (and a few afternoons when I was too frustrated with some other issue and I needed to clear my head), the C++ code got to a semi-stable state, and there were just a few bugs preventing it from being functional. This was around the time when the leak hunt began, so I had to set it aside because my brain couldn’t take any more debugging, let alone in my spare time.</p>
+<p>But then when the leak hunt ended, and all the bigger blockers were gone, and we took the chance to decide what to do next, since 0.3.17 was just out the door and there was time to polish and fix some of the issues that hadn’t been considered blockers, but are still very much “wanted”, so I thought “hey, isn’t this the perfect chance?”. The C++ conversion wasn’t supposed to add any bad bugs, since all the algorithms are essentially the same, but it would open room for many improvements in code design and structure (generally called refactoring), and hopefully it would save me time fixing some of them. So, over the past weekend, I took the time to fix the remaining issues, and on Sunday afternoon, I commited the result.</p>
+<p>And this is when the week started.</p>
+<p>I started by cleaning up some parts of the code that were still using the C “idioms”, and I refactored them into their C++ equivalent. Most notably, I took all the code in the notification area, and the task list, both of which worked with toolbars, and created a generic class CToolbar, which would simplify managing the toolbar window, allowing for the code to be a lot more readable.</p>
+<p>If you have used the test builds, or built the branch yourself, you may have noticed in the debug logs some very annoying log spam coming from comctl32. I decided to take a look at it since it had been making my life harder while debugging other issues, and I traced it to the TB_SETMETRICS message. This message assigns some properties of the toolbar involved in calculating the layout of the toolbar. Namely, they define the space between the content of the buttons and their border (button padding), and the space between buttons (button spacing). This function is not implemented by WINE’s comctl32, and was being called in both toolbars, repeatedly, while it was really only necessary on theme changes.</p>
+<p>&nbsp;So, I took the calls to SetMetrics, and I moved them to a better place, but instead of leaving it like that, I wondered if these calls may be related to the wrong size and position of the buttons when themes are used in ReactOS. So I started implementing the functions, trying to be the least invasive possible (since this code would have to be submitted to WINE at some point), and sadly I saw no definite improvement. When I mentioned this on IRC, Giannis replied saying I should just test what happens in windows if I omit the SetMetrics calls. And in a very large mental facepalm (which I may or may not have executed physically), I confirmed that the calls are only affecting the small gap between buttons, and the size and position of the buttons are completely unaffected. Regardless, the logspam is gone, which is still a bonus.</p>
+<p>After this, I looked at something that I had already been pondering before during the conversion to C++. There were two instances of a strange structure with two function pointers, used from the tray window in order to display the context menus, and execute the selected action. This struct appeared to be used in exactly the same way you’d expect someone to use the IContextMenu COM interface, and in fact, the callbacks themselves were using an internal IContextMenu pointer to obtain the menu items, so I turned those two instances of the structure into classes with IContextMenu, adapted the existing code to the new function parameters, and the tray window handler to use IContextMenu instead of the old structure, and now it’s all nicer.</p>
+<p>Finally, I turned my eyes on the old (in terms of the shell work) issue of the menubar not closing the popup menus on a second click, one of the big-but-not-quite-blocking issues that I mentioned earlier. This issue had already been attacked by me in the past, but I didn’t have much luck. The problem is I’m still not having any. After many hours tweaking the code in different ways, it never worked the way I wanted it.</p>
+<p>On the upside, I discovered that apparently Microsoft also gave up on making the shell menubar behave exactly like the system menubar (where the system menubar closes popups on mouseup and not mousedown, but most applications, including explorer, cancel the menu on mouse down instead). This gave me the idea that maybe I can just make it so that the menubar ignores all input until after the menu is confirmed to be closed, and maybe that way I can just avoid the problem altogether. I’ll have to try that on Monday.</p>
+<p>This is it for today, more next weekend.</p>
+<p>Discussion: https://www.reactos.org/forum/viewtopic.php?f=2&amp;t=13757</p>
+
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/post-incrementing-c.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

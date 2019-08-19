@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Word 2010 support – Weekly report – Part 3: Installation progress | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="Word 2010 support – Weekly report – Part 3: Installation progress" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/word-2010-support-weekly-report-part3-installation-cont//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Word 2010 support – Weekly report – Part 3: Installation progress logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="Word 2010 support – Weekly report – Part 3: Installation progress logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">Word 2010 support – Weekly report – Part 3: Installation progress - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/word-2010-support-weekly-report-part3-installation-cont'>word-2010-support-weekly-report-part3-installation-cont</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>Word 2010 support – Weekly report – Part 3: Installation progress</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">hbelusca</a> | December 6, 2016</p>
+
+						<div id="post-content">
+							
+<p>
+Hello everybody. Today I am going to summarize my progress on Word 2010 installation so far, concerning the main two problems I did encounter: setting a correct environment block for services, and understanding why the <code>SLInitialize</code> function fails, leading to the failure of the Word 2010 installation. The third problem, namely correctly stopping services, will be addressed in a subsequent report. Reading the two previous weekly reports: <a href="http://reactos.org/blogs/word-2010-support-weekly-report-part1-installation">"Part 1: Installation"</a>, and <a href="http://reactos.org/blogs/word-2010-support-weekly-report-part2-installation-cont">"Part 2: Installation (cont.)"</a>, is strongly advised ;-)
+</p>
+<!--break-->
+
+<h2>Services environment block</h2>
+
+<p>
+In my <a href="http://reactos.org/blogs/word-2010-support-weekly-report-part1-installation">first report</a>, section <b>"OSPPSVC service investigation, 1/2"</b>, I showed that our services were not started with a correct environment block, and in particular some of them, for example the OSPPSVC service used by Word 2010 installation, needed particular environment variables: <code>ALLUSERSPROFILE</code>, <code>USERPROFILE</code>, <code>CommonProgramFiles</code> and <code>ProgramFiles</code>. These environment variables are not present by default in the system, for example, the environment block for programs loaded under the SYSTEM account, such as winlogon.exe or services.exe, only have a restricted number of variables, basically the following ones:
+</p>
+<pre>
+ComSpec, OS, Path, PATHEXT; + some related to system architecture;
+SystemDrive, SystemRoot, TEMP, TMP, windir
+</pre>
+<p>
+while regular applications, as well as services, also have the ones related to ProgramFiles and the per-user ones. The latter are initialized by the ReactOS component "User Environment DLL" (userenv.dll), responsible, amongst other things, for loading and unloading the so-called "user profiles", which consist in the "current user" registry settings, for each different users.
+</p>
+<p>
+The JIRA report <a href="https://jira.reactos.org/browse/CORE-12414">CORE-12414</a> tracks the commits related to fixing the environment block problem for services. In commit <a href="https://svn.reactos.org/svn/reactos?view=revision&revision=73431">r73431</a> I added an APITest: <code>advapi32:ServiceEnv</code>, which looks for the existence of the user-related environment variables Inside services' environment blocks. The test of course succeeds on a clean Windows (2k3, Vista+) installation, while it currently fails in ReactOS as seen in this <a href="http://www.reactos.org/testman/detail.php?id=30859865&prev=0">test result</a> (revision 73432). The correct fix, committed by Eric Kohl in <a href="https://svn.reactos.org/svn/reactos?view=revision&revision=73433">revision 73433</a> on my behalf, consists in using the <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb762270(v=vs.85).aspx">CreateEnvironmentBlock</a> API to initialize a suitable environment block for the services. You can see <a href="http://www.reactos.org/testman/diff.php?id1=30859865&id2=30861801&type=1&strip=0">here</a> the result of the <code>advapi32:ServiceEnv</code> test (left–r73432: before the fix; right–r73433: after the fix).
+</p>
+
+<h2>The reason of the <code>SLInitialize</code> function failure</h2>
+
+<p>
+In my <a href="http://reactos.org/blogs/word-2010-support-weekly-report-part2-installation-cont">second report</a>, section <b>"OSPPSVC service investigation 2/2, and MSI installation (cont.)"</b>, I showed that another main cause of the Word 2010 installation failure was due to the <code>SLInitialize</code> function. This is a function that is exported by a DLL named OSPPCEXT.DLL (a helper for the Office Software Protection service), and is called by the Word 2010 installation. As I explained it in the previous report, this function is partially crypted, and is decrypted at run-time.
+</p>
+<p>
+The approach that I have chosen here is to trace all the API calls done by <code>SLInitialize</code>. Following a suggestion by Sylvain Petreolle I decided first to take a trace of the Word 2010 installation under Wine. The reason for this choice was partly driven by the fact that ReactOS uses most of the its user-mode dlls from Wine, in particular msi.dll and some others. The aim is then to compare the calls made during <code>SLInitialize</code> executions, with the ones made by this function under ReactOS. Taking the full list of API calls under Wine is done by running (in a terminal): <code>WINEDEBUG=+relay wine setup.exe</code>, possibly redirecting the output to a file. The command sets a shell environment variable <code>WINEDEBUG</code> to <code>+relay</code>, then starts the setup executable proper under Wine. The environment variable asks Wine to trace the API calls with a special built-in mechanism. This generates at the end a 5GB log file, of which only approximately 450kB of trace is useful and corresponds to the calls made during <code>SLInitialize</code> execution. Performing the trace under ReactOS is actually a bit easier: I place a breakpoint before the call to <code>SLInitialize</code> using WinDbg, as well as other breakpoints inside some critical called functions (using the Wine trace as a guidance).
+</p>
+<p>
+For the curious reader, here are some excerpts, first under Wine, then under ReactOS. I display two interesting <code>RegCreateKeyExW</code> calls, the second one is the one that makes the installation to actually fail under ReactOS. The first parameter of this function is either an existing registry key handle or one of the special values, amongst which:
+</p>
+<pre>
+#define HKEY_LOCAL_MACHINE ((HKEY)0x80000002)
+#define HKEY_USERS         ((HKEY)0x80000003)
+</pre>
+<p>Call trace in Wine:</p>
+<pre>
+...
+0035:Call advapi32.RegCreateKeyExW(80000002,6bed4a30 L"SOFTWARE\\Microsoft\\OfficeSoftwareProtectionPlatform\\ReferralData\\",00000000,00000000,00000000,000f003f,051bd440,051bd450,051bd480) ret=6bf07141
+0035:Ret  advapi32.RegCreateKeyExW() retval=00000000 ret=6bf07141
+...
+0035:Call advapi32.RegCreateKeyExW(80000003,6bed48e8 L"S-1-5-20\\SOFTWARE\\Microsoft\\OfficeSoftwareProtectionPlatform\\Policies\\PayloadOverride\\",00000000,00000000,00000000,000f003f,051bdc74,051bdc84,051bdcb4) ret=6bf07141
+0035:Ret  advapi32.RegCreateKeyExW() retval=00000000 ret=6bf07141
+...
+</pre>
+<p>The two calls succeed, because <code>retval=0: ERROR_SUCCESS</code>.</p>
+<p>
+Now let's see the call trace in ReactOS, by stepping through with WinDbg: I am stepping inside <code>RegCreateKeyExW</code> and I display first the value of the subkey being created, then the value of a <code>NTSTATUS Status</code> variable from which the return value of <code>RegCreateKeyExW</code> will be derived.
+</p>
+<pre>
+...
+Breakpoint 6 hit
+advapi32!RegCreateKeyExW:
+001b:7c665a10 8bff            mov     edi,edi
+kd> ?? lpSubKey
+wchar_t * 0x6bed4a30
+ "SOFTWARE\Microsoft\OfficeSoftwareProtectionPlatform\ReferralData\"
+kd> p
+...
+kd> ?? Status
+long 0n0 // <--- This is 0x00000000: STATUS_SUCCESS : The call succeeds.
+kd> g
+...
+Breakpoint 6 hit
+advapi32!RegCreateKeyExW:
+001b:7c665a10 8bff            mov     edi,edi
+kd> ?? lpSubKey
+wchar_t * 0x6bed48e8
+ "S-1-5-20\SOFTWARE\Microsoft\OfficeSoftwareProtectionPlatform\Policies\PayloadOverride\"
+kd> p
+...
+kd> ?? Status
+long 0n-1073741811 // <--- This is 0xC000000D: STATUS_INVALID_PARAMETER : The call fails, and the installation fails at this point.
+kd> g
+Breakpoint 2 hit
+msi!ITERATE_Actions+0x175:
+001b:781d1ab5 c745f800000000  mov     dword ptr [ebp-8],0
+</pre>
+<p>
+Hence, while the call: <code>RegCreateKeyExW(HKEY_USERS, L"S-1-5-20\\SOFTWARE\\Microsoft\\OfficeSoftwareProtectionPlatform\\Policies\\PayloadOverride\\", ...)</code> succeeds under Wine, it plainly fails under ReactOS. Why?
+</p>
+<p>
+To elucidate this problem, let us remind that <code>RegCreateKeyExW(HKEY_USERS, ...)</code> opens the registry key "HKEY_USERS" that contains the registry hives for each logged user on the system. On Windows (see first screen-capture), there is usually the default user registry settings inside the .DEFAULT hive, then the settings of the special accounts (see <a href="https://support.microsoft.com/en-us/kb/243330">MS KB243330</a>): S-1-5-18 for "Local System" (associated with SYSTEM rights), S-1-5-19 for "NT AUTHORITY\Local Service", and S-1-5-20 for "NT AUTHORITY\Network Service". Then comes the regular users' settings. On ReactOS we do not have the S-1-5-19 and S-1-5-20 accounts loaded yet, because they are unused.
+</p>
+<div class="imgp_title">Contents of HKEY_USERS under Windows 2003</div><img src="/sites/default/files/imagepicker/23908/win2k3_hkeyusers.png" alt="Contents of HKEY_USERS under Windows 2003"  class="imgp_img" width="660" height="344" /><div class="imgp_desc"></div>
+<p></p>
+<div class="imgp_title">Some Windows 2003 services with their default user account assignments</div><img src="/sites/default/files/imagepicker/23908/win2k3_services_1.png" alt="Some Windows 2003 services with their default user account assignments"  class="imgp_img" width="1315" height="748" /><div class="imgp_desc">Translation: &quot;Service local&quot; == &quot;Local Service&quot;; &quot;Service réseau&quot; == &quot;Network Service&quot;; &quot;Système local&quot; == &quot;LocalSystem&quot;. In ReactOS only the latter account is currently used.</div>
+<p></p>
+<p>
+Why does this matter for the Word 2010 installation problem? As seen from the call traces above, the installation code happens to hardcode the registry key to open/create, and in particular hardcodes that it wants to create a subkey inside HKEY_USERS\S-1-5-20 , in other words <b>expects</b> the existence of the S-1-5-20 ("Network Service") account to be loaded. On Windows this expectation is correct because, first, the Office protection service OSPPSVC is loaded under this account, as well as other native Windows services, <b>while on ReactOS, this is not the case</b>: all of our services are loaded under the "Local System" account. No one loaded under "Network Service" means, no S-1-5-20 key loaded under HKEY_USERS, and therefore the installation is going to fail (as well as all other code trying to open/create subkeys under HKEY_USERS\S-1-5-20).
+</p>
+<p>
+So, the "fix" would be to have some of our services to load under the "Network Service", and the job is done, you would say? Sadly the code needed for services to be started under a different user account than the default "Local System" is not completely implemented yet (as of revision 73438), so more work has to be done to be able to do that properly. Eric Kohl, one of the ReactOS developers, is currently working on this topic. In the meantime, one plausible hack I see would be to unconditionally load the "Network Service" account, to be able to have its registry key available.
+</p>
+
+<h2>Conclusion/criticism: Why does it work on Wine?!</h2>
+
+<p>
+But <i>Why does it (already) work on Wine?!</i> As it turns out, this is a side-effect of their own hacks. The code of their registry implementation (in the Wine server) allows anybody to create direct subkeys under HKEY_USERS (this is forbidden on a real NT implementation, or in ReactOS, since HKEY_USERS is a virtual registry key, under which real registry keys are loaded), subkeys that are only <b>volatile</b> (are not stored anywhere in a file). As a consequence, when the Word 2010 installation attempts to create/open a subkey under HKEY_USERS\S-1-5-20, even when S-1-5-20 does not exist (and it does not in Wine, since they do not have the special accounts implemented), this key is created on the fly, allowing for the installer to continue its normal route and ultimately succeed. However, as soon as the Word 2010 installer quits (and the Wine server exits), these registry keys just plainly vanish. This fact was confirmed by Sylvain Petreolle. As it may seem acceptable for Wine, this hack is not acceptable <b>at all</b> for ReactOS; we need instead a proper implementation.
+</p>
+<p>I hope coming with a nice fix in the coming next week!</p>
+
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/word-2010-support-weekly-report-part3-installation-cont.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

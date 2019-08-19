@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GSoC xHCI: Final Submission | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="GSoC xHCI: Final Submission" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/gsoc-xhci-final-submission//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="GSoC xHCI: Final Submission logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="GSoC xHCI: Final Submission logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">GSoC xHCI: Final Submission - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/gsoc-xhci-final-submission'>gsoc-xhci-final-submission</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>GSoC xHCI: Final Submission</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">ramateja.g</a> | August 25, 2017</p>
+
+						<div id="post-content">
+							
+<h1><strong>Links:</strong></h1>
+<p><span style="font-weight: 400;">Link to my work:</span><a href="https://svn.reactos.org/svn/reactos/branches/GSoC_2017/usbxhci/reactos/drivers/usb/usbxhci/"> <span style="font-weight: 400;">https://svn.reactos.org/svn/reactos/branches/GSoC_2017/usbxhci/reactos/drivers/usb/usbxhci/</span></a></p>
+<p><span style="font-weight: 400;">Link to check out using svn:</span><a href="https://svn.reactos.org/reactos/branches/GSoC_2017/usbxhci/reactos/"> <span style="font-weight: 400;">https://svn.reactos.org/reactos/branches/GSoC_2017/usbxhci/reactos/</span></a></p>
+<p><span style="font-weight: 400;">All the commits log:</span><a href="https://svn.reactos.org/svn/reactos/branches/GSoC_2017/usbxhci/?view=log"> <span style="font-weight: 400;">https://svn.reactos.org/svn/reactos/branches/GSoC_2017/usbxhci/?view=log</span></a></p>
+<p><a href="https://code.reactos.org/changelog/~br=GSoC_2017/reactos/branches/GSoC_2017/usbxhci?max=30&amp;view=fe"><span style="font-weight: 400;">https://code.reactos.org/changelog/~br=GSoC_2017/reactos/branches/GSoC_2017/usbxhci?max=30&amp;view=fe</span></a></p>
+<h1><span style="font-weight: 400;">Introduction:</span></h1>
+<p><span style="font-weight: 400;">My aim is to develop driver for xHCI which is compatible with ReactOS. For the development I&rsquo;ve used Windows 2003 server edition running on Vmware Workstation. The first link points to the folder in which all main code and header files are present. To view any file, click on it and in the log; against any revision, click on view/download to see the code. To get and compile my work please follow the instructions given in </span><a href="https://reactos.org/wiki/Building_ReactOS"><span style="font-weight: 400;">https://reactos.org/wiki/Building_ReactOS</span></a><span style="font-weight: 400;">. Check out usbxhci branch from the link given above. To build the whole operating system use the commands given in the above link. To build only the xHCI driver use the command &ldquo;ninja usbxhci&rdquo; in the output folder(similar to &ldquo;ninja livecd&rdquo; example in the wiki). </span></p>
+<h1><span style="font-weight: 400;">What is xHCI:</span></h1>
+<p><span style="font-weight: 400;">Universal Serial Bus(USB) has 5 different modes of data transfer which are segregated based on the transfer speed, starting at low speed (USB 1.0) up to SuperSpeed+ (USB 3.1). xHCI stands for extensible host controller interface. Host Controller(HC) is the hardware that connects network devices or storage devices to the computer. A </span><strong>host controller interface</strong><span style="font-weight: 400;"> (</span><strong>HCI</strong><span style="font-weight: 400;">) is a register-level interface that enables a HC for USB hardware to communicate with a HC driver in software. xHCI is a computer interface specification which is capable of interfacing with USB 1.x, 2.0 and 3.x compatible devices. The xHCI architecture was designed to support all USB speeds, including SuperSpeed (5 Gbit/s) and future speeds, under a single driver stack.</span></p>
+<h2><span style="font-weight: 400;">Major Components:</span></h2>
+<p><a href="https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/extensible-host-controler-interface-usb-xhci.pdf"><span style="font-weight: 400;">eXtenstible Host Controller Interface specification</span></a><span style="font-weight: 400;"> can be found on Intel website. </span></p>
+<img src="/sites/default/files/imagepicker/49141/arch.png" alt="Image"  class="imgp_img" width="1037" height="532" />
+<p><span style="font-weight: 400;">The above figure shows xHCI general architecture. xHCI gives the register interface by which we can communicate with the hardware.</span></p>
+<p><span style="font-weight: 400;">In figure there are 3 blocks PCI config space MMIO space and Memory Address Space. In general hardware is connected to PCI which is standardised form of processor bus; it connects to processor and memory. So from software point of view our first contact with the HC will be through PCI bus. Communication with PCI is done by its respective driver. &nbsp;PCI driver provides the base address as can be seen in the image. </span></p>
+<p><span style="font-weight: 400;">MMIO space is the register space of the controller. Register space in xHCI is divided into 5 segments. Capability registers are at direct offset from the base address. Operational registers are at offsets from operational base which can be calculated from the information given in the documentation. Similarly other bases like runtime base, doorbell base and extended capabilities bases can be calculated. All of these are the hardware component accessible by the software. </span></p>
+<p><span style="font-weight: 400;">Memory address space is the space allocated for the xHCI driver in the Memory (RAM). When the driver is loaded it is allocated some memory which can be used as required. In the memory address space crucial components are Event ring, Command ring, Device contexts and Transfer rings. &nbsp;Other components are there as support to these i.e., event ring segment table is used to store the locations of the event ring for the hardware to find them. Similarly device context base address array has the addresses to different device contexts. </span></p>
+<p><span style="font-weight: 400;">Rings are circular data structures used by the hardware and software to communicate with each other. Event rings are used by the hardware to notify about different events like device attach, command completion etc., Command ring is used by the driver to send commands to the Controller. &nbsp;Transfer rings are used to transfer data between computer and the connected devices. </span></p>
+<h1><strong>Work Done:</strong></h1>
+<p><span style="font-weight: 400;">Link to blogs: &nbsp;</span><a href="https://reactos.org/blog/49141"><span style="font-weight: 400;">https://reactos.org/blog/49141</span></a></p>
+<img src="/sites/default/files/imagepicker/49141/stack.png" alt="USB stack"  class="imgp_img" width="591" height="191" />
+
+<p><span style="font-weight: 400;">Above diagram shows the USB driver stack in <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/hh406256(v=vs.85).aspx">Windows</a>. After deliberation we&rsquo;ve decided to take the existing usbport driver in ReactOS and implement xHCI driver below it. Due to this all the functions needed to communicate with usbport remained same as in ehci.</span></p>
+<p><span style="font-weight: 400;">After stable empty driver was created then I started working on the functions. Starting the controller was the first objective. This included many steps like initializing registers with required values. Starting the controller broke down into two parts, initializing hardware and initializing resources. Resources are the data structures in the Memory address space.</span></p>
+<p><span style="font-weight: 400;">In the next phase I worked on generating interrupts. Interrupt mechanism is very different for xHCI compared to older versions, this is detailed in one of my blog posts. It supports MSI interrupt mechanism but the PCI driver present in ReactOS didn&rsquo;t support that. So I had to go with the traditional interrupt generation mechanism. After some initial implementation interrupts were being generated but after a single interrupt the driver stopped accepting further interrupts. &nbsp;</span></p>
+<p><span style="font-weight: 400;">To get the driver to accept multiple interrupts many other functions were needed. First to test the interrupt mechanism I&rsquo;ve sent a Command to check if the controller was processing it and generating interrupt. Here I was stuck for some time as the code seemed to be right but it wasn&rsquo;t working. Upon debugging we&rsquo;ve found a typecast issue in the runtime register base address calculation that caused the problem. Once that was cleared up I worked on various functions like GetPortStatus which are required for interrupt processing.</span></p>
+<p><span style="font-weight: 400;">Next major hurdle was continuous call of some functions which we initially thought to be some bug. Later it turned out to be a regular polling mechanism. After that got cleared up and some code optimisation/debugging it started generating interrupts on every connect/ disconnect of the pendrive. In windows 2003 server edition we can see unknown device attached when we connect a pendrive.</span></p>
+<img src="/sites/default/files/imagepicker/49141/xhci-devices.png" alt="Image"  class="imgp_img" width="1026" height="881" />
+<p><span style="font-weight: 400;">In the pre-final week I&rsquo;ve looked into USB device initialization. This required sending various commands to the controller. Rudimentary implementation of the command and event ring was present from the start. It needed to be refined. So I&rsquo;ve worked on functions to send commands and receive events and also account for looping of the ring. I&rsquo;ve tested the rings till they looped and everything was functioning normally.</span></p>
+<p><span style="font-weight: 400;">As a part of final submission I&rsquo;ve cleaned up the code. Removed commented out code and edited the code to follow reactOS coding style also added licence headers. Upon merging with the trunk there were a few issues that were handled. I&rsquo;ve modified the stop controller so that the controller can be safely disabled and enabled in the device manager.</span></p>
+<h2><span style="font-weight: 400;">Summary:</span></h2>
+<p><span style="font-weight: 400;">Driver is now able to successfully start the controller. It generates Port status change events for every disconnect or connect and also generates events on command completion. It generates interrupt if there is any event. It handles any spurious interrupts. It can send commands to the controller and successful completion of valid commands is tested. Both command ring and event ring are capable of handling ring full situations and also ring loop back scenario. Controller can be disabled which successfully stops the controller and re-enabled which essentially resets the driver. &nbsp;</span></p>
+<h1><strong>Future work:</strong></h1>
+<p><span style="font-weight: 400;">Next logical step will be to complete USB device initialization. This involves assigning device slot, getting the address, setting up control endpoint etc., Data structures required to do assign device slot and functions to get the address are ready. Once the device slot is assigned the first operation that driver performs on the USB device is to set an address. This is done using the command ring. After that it moves forward to Device Configuration phase for which we need control endpoint. Hence first QueryEndpointRequirements function should be dealt with. After that OpenEndpoint function should be written. &nbsp;</span></p>
+<p><span style="font-weight: 400;">As the control transfer is done using ring mechanism and code for command/event ring is working we can just port it to make transfer ring function. After all the required functions are ready we can initialise the USB device and get its description using control transfer. &nbsp;There are other minor tasks that should be worked on later like all the ring structures can actually be expanded as per the specification but for now we&rsquo;ve decided to make them static. That can be altered later without affecting the main code as the structures are set up for it. &nbsp;All of these are short term future work.</span></p>
+<p><span style="font-weight: 400;">In the long run a lot more needs to be implemented. All the transfer types i.e., Control transfer, Bulk Transfer, Isoch transfer etc., Also functions to handle slot management and to handle older usb types should be worked on.</span></p>
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/gsoc-xhci-final-submission.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

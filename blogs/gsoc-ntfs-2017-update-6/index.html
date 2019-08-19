@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GSoC NTFS 2017 Update 6 | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="GSoC NTFS 2017 Update 6" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/gsoc-ntfs-2017-update-6//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="GSoC NTFS 2017 Update 6 logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="GSoC NTFS 2017 Update 6 logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">GSoC NTFS 2017 Update 6 - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/gsoc-ntfs-2017-update-6'>gsoc-ntfs-2017-update-6</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>GSoC NTFS 2017 Update 6</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">coderTrevor</a> | July 24, 2017</p>
+
+						<div id="post-content">
+							
+<p>Hello again! :)</p>
+
+<p>Last week, I finished the code that writes a B-Tree node to disk. Specifically, it lets me write the node to an index buffer within the index allocation of the parent directory. Don't worry if that doesn't make sense, I'll explain it more below.</p>
+
+<p>From a user's perspective, this means that the driver now has the ability to create dozens of files. My tester will create 39 files before filling the index node. The exact number of files a node can store is dependant on the length of the filename. Here's a short gif of me creating files with the tester in ReactOS, and comparing the results of the dir command before and after:</p>
+<p><img src="/sites/default/files/imagepicker/49142/Creating_29_files_in_ROS.gif" alt="Creating 29 files on NTFS in ROS"  class="imgp_img" width="796" height="597" /></p>
+
+<h2>Getting technical</h2>
+<p>It occurs to me that lately I may have been speaking in too many technical terms on this blog without giving enough background information, and it's been far too long since you've seen a good hex dump. ;) So I'll try to give a more thorough explanation of how creating a file in NTFS is implemented, and what I've been working on.</p>
+
+<p>As I've said before, every piece of data on an NTFS volume is assigned to a file, and that file will have a corresponding entry in the master file table. Not every file, in the NTFS sense of the word, is visible to the host operating system or user. Each file will consist of multiple attributes that describe the file and the data it contains. Directories are files too, as far as NTFS is concerned. Directories use a particular set of attributes to describe the files they store.</p>
+
+<p>A directory is essentially just an ordered list of files. The list is ordered by each file's name, and each entry in the list contains some basic information about the file, like its size and its entry number in the master file table. Actually, most of this data is just a copy of each file's filename attribute. The list of files is known as an index. For directories with only a few files, the index is stored in the directory's file record, in an attribute called $INDEX_ROOT. When there are many files, the list is implemented as a <a href="https://en.wikipedia.org/wiki/B-tree">B-Tree</a>, and $INDEX_ROOT is the root node of that tree. Each file that's in the list is called an index entry, or index node entry. In truth, directories are just the most common type of index NTFS uses, there are others as well. Every attribute associated with a directory index has the name $I30, which probably indicates that the attribute is for an index which has entries of attribute type 0x30, the $FILENAME_ATTRIBUTE.</p>
+
+<p>If you really want a good understanding, check out some reference material on the subjects of NTFS <a href="https://flatcap.org/linux-ntfs/ntfs/concepts/directory.html">directories</a> and <a href="https://flatcap.org/linux-ntfs/ntfs/concepts/tree/index.html">B*Trees</a>.</p>
+
+<p>Don't worry if this is hard to absorb. It took me quite a while to get it! I think now is a good time to actually see what I'm talking about, in hex. I've used my NTFSBrowse program to create dumps of a directory's file record. Click the images to see the full file records. First take a look at an empty directory:</p>
+
+<p><a href="https://s3.amazonaws.com/gsoc2017/Update6/0files/index.html"><img src="/sites/default/files/imagepicker/49142/0files.png" alt="0 files"  class="imgp_img" width="992" height="818" /></a></p>
+
+<p>The empty directory contains just one entry in the node, which is the dummy entry which indicates the end of the list. Here's what the directory looks like after my tester creates a single file called Project.of:</p>
+
+<p><a href="https://s3.amazonaws.com/gsoc2017/Update6/1file/index.html"><img src="/sites/default/files/imagepicker/49142/1file.png" alt="1 file"  class="imgp_img" width="1354" height="819" /></a></p>
+
+<p>Here's how it looks after creating another file called Gutenberg's.of:</p>
+
+<p><a href="https://s3.amazonaws.com/gsoc2017/Update6/2files/index.html"><img src="/sites/default/files/imagepicker/49142/2files.png" alt="2 files"  class="imgp_img" width="1356" height="847" /></a></p>
+
+<p>And that goes on for the next four files:<br>
+<a href="https://s3.amazonaws.com/gsoc2017/Update6/3files/index.html">Etext.of</a><br>
+<a href="https://s3.amazonaws.com/gsoc2017/Update6/4files/index.html">of.of</a><br>
+<a href="https://s3.amazonaws.com/gsoc2017/Update6/5files/index.html">Shakespeare's.of</a><br>
+<a href="https://s3.amazonaws.com/gsoc2017/Update6/6files/index.html">First.of</a><br>
+
+</p>
+
+<p>When the seventh file is added to the directory, the index becomes too large for the $INDEX_ROOT attribute to store everything in the file record. When this happens, the list of files in the index root (known collectively as an index node) gets packed up and moved to its own set of clusters on the hard drive. To describe the pieces of the index that are stored outside of the file record, two additional attributes are created, $INDEX_ALLOCATON and $BITMAP (I plan to implement this step in our driver really soon).</p>
+
+<p><a href="https://s3.amazonaws.com/gsoc2017/Update6/7files/index.html"><img src="/sites/default/files/imagepicker/49142/7files.png" alt="7 files"  class="imgp_img" width="1359" height="843" /></a></p>
+
+<p>This year, I updated NTFSBrowse to also dump the contents of the index allocation. This data will contain every node in the index except for the index root. Each node is packed into a data structure called an index buffer, which has a set size, usually 4096 bytes, and the index allocation will contain one or more index buffers. Here's what the <a href="https://s3.amazonaws.com/gsoc2017/Update6/7files/index.html">file record</a> and <a href="https://s3.amazonaws.com/gsoc2017/Update6/7files/%24I30.html">index buffer</a> look like with the seven files.</p>
+
+
+<p>At this point, the B-Tree for this index has two nodes, one of which being index root, and it looks something like this:</p>
+
+<p><img src="/sites/default/files/imagepicker/49142/7files_btree.png" alt="7 files in node"  class="imgp_img" width="772" height="255" /></p>
+
+<p>For the next 32 files that my tester creates, the child node will keep growing. When a node grows too large, it needs to be split. That isn't implemented yet, so this is a good place to end this post. :)</p>
+
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/gsoc-ntfs-2017-update-6.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<meta charset="utf-8">
+
+	
+
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GSoC final report for USB project. | ReactOS Project</title>
+	<meta name="author" content="" />
+
+	
+	<meta name="keywords" content="ReactOS, react, os, open source, free, win32, winapi">
+	
+
+	
+	<meta name="description" content="ReactOS is a free, opensource reimplementation of windows">
+	
+
+	<meta name="generator" content="Hugo 0.57.0" />
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet'
+		type='text/css'>
+
+	
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+	
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+	
+
+	<link rel="alternate" href="https://colinfinck.github.io/index.xml" type="application/rss+xml" title="ReactOS Website">
+
+	
+	<meta property="og:title" content="GSoC final report for USB project." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://colinfinck.github.io/blogs/gsoc-final-report-usb-project-0//" />
+	<meta property="og:image" content="/sites/default/files/ReactOS_0.png" />
+
+</head>
+
+	<body>
+		<div style="width:100%; height:30px; background-color:red; color:white; display:block; top:0px;padding-bottom:30px;font-size:18px;">
+    <center>WORK IN PROGRESS!</center>
+</div>
+
+		<header>
+			<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+	<div class="navbar navbar-default yamm" role="navigation" id="navbar">
+		<div class="col-md-offset-1 col-md-10">
+			<div class="navbar-header">
+				<a class="navbar-brand home" href="https://colinfinck.github.io/">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="GSoC final report for USB project. logo"
+						class="hidden-xs hidden-sm">
+					<img src="https://colinfinck.github.io//sites/default/files/ReactOS_0.png" alt="GSoC final report for USB project. logo"
+						class="visible-xs visible-sm">
+					<span class="sr-only">GSoC final report for USB project. - go to homepage</span>
+				</a>
+				<div class="navbar-buttons">
+					<button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+						data-target="#navigation">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-align-justify"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/what-is-reactos">What is ReactOS?</a></li>
+								
+								<li><a href="/reactos-legal">Is ReactOS legal?</a></li>
+								
+								<li><a href="/faq">FAQ</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="/news/">All News</a></li>
+								
+								<li><a href="/project-news/">Project News</a></li>
+								
+								<li><a href="/blogs/">Blog Posts</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://chat.reactos.org">Chat</a></li>
+								
+								<li><a href="/forum">Forum</a></li>
+								
+								<li><a href="https://reactos.spreadshirt.net">Shop</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li><a href="https://reactos.org/wiki/Building_ReactOS">Building ReactOS</a></li>
+								
+								<li><a href="https://jira.reactos.org">Jira</a></li>
+								
+								<li><a href="/getbuilds">Download ReactOS Builds</a></li>
+								
+								<li><a href="https://github.com/reactos">ReactOS on GitHub</a></li>
+								
+								<li><a href="https://reactos.org/wiki/File_Bugs">Report a Bug</a></li>
+								
+								<li><a href="/testman">Testman</a></li>
+								
+								<li><a href="/wiki">Wiki</a></li>
+								
+								<li><a href="/developing">Contribute</a></li>
+								
+								<li><a href="/jobs#paid-jobs">Work for ReactOS</a></li>
+								
+							</ul>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/donate">Donate</a>
+						
+					</li>
+					
+					
+
+					<li
+						class="dropdown">
+						
+							<a href="/download">Download</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="collapse clearfix" id="search">
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<div class="container-fluid">
+			<div class="row" id="heading-breadcrumbs">
+	<div class="col-md-offset-1 col-md-10">
+		
+		
+		<div class="breadcrumbs">
+			<a href="https://colinfinck.github.io/">home</a>
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs'>blogs</a>
+			
+			
+			
+			
+			
+			/ <a href='https://colinfinck.github.io/blogs/gsoc-final-report-usb-project-0'>gsoc-final-report-usb-project-0</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		<h1>GSoC final report for USB project.</h1>
+	</div>
+</div>
+
+			<section id="content" class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-9 row" id="blog-post">
+						<p class="text-muted mb-small text-right">by <a href="#">VardanM</a> | August 22, 2016</p>
+
+						<div id="post-content">
+							
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span style="font-family:arial,helvetica,sans-serif;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Here is my final blog post in terms of GSoC, but definitely not the last one in terms of contribution to ReactOS. I’ll try to share conclusion of my work done during this summer.</span></span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<h3 dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color:#4b0082;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">First of all links</span></span></span></span></h3>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Here are the links to GIT and SVN repositories containing my commits. These repos are identical, so for review or fork you can choose the one that is more eligible for you. I myself will prefer Git.</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">https://github.com/mvardan/reactos/commits/GSoC-ReactOS-USB?author=mvardan</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p><span style="font-size:18px;"><span style="color: rgb(0, 0, 0); font-family: Arial; white-space: pre-wrap; line-height: 1.38; background-color: transparent;">http://code.reactos.org/changelog/~br=GSoC_2016,author=vmikayelyan/reactos</span></span></p>
+<h3 dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color:#4b0082;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">What was done.</span></span></span></span></h3>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">During the planning stage I didn’t expect that I am so far from Windows or… let’s say ReactOS driver development. I had some experience in Linux driver development, but this is very different. Absolutely another driver model requires lot of investigation and communication with mentor.</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">At the beginning of project, I have done testing of our usb stack running under win2k3 results of which is presented in my first blog post. https://goo.gl/P7Imco</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">First of all I have noticed that ROS’s USB stack is quite “lazy”, it do not like reloading. The cause of this was missings in PnP handling of all layers of USB stack. So as part of overall stability increasion I decided to investigate and fix PnP issues. As you may know, implementation of PnP handler for bus drivers is much harder than the same task for device drivers. &nbsp;This was very challenging for me, and I’ve committed a lot of time to get PnP handler working under 2k3.</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">PnP handler implementation was divided into two parts. First part was to make it run on 2k3, then test and integrate changes into ROS.</span></span></span></p>
+<h4 dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</h4>
+<h4 dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size:18px;"><span style="color:#696969;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">2k3.</span></span></span></span></strong></h4>
+<h4 dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</h4>
+<h4 dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family: Arial; white-space: pre-wrap; font-size: 18px; color: rgb(119, 119, 119); line-height: 1.38; background-color: transparent;">I was testing our ohci+hub pair injected into win2k3 usb stack. Before advancing to reload phase, I was trying to make them work with other layers of MS USB stack.</span></h4>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">For example MS’s usbccgp was not working on top of our ohci+hub pair due to wrong handling of some PnP IRPs. The “</span><a href="https://github.com/mvardan/reactos/commit/83b8a35bde63d9336b000da20ae92db18ea1335c" style="text-decoration:none;"><span style="color:#696969;"><span style="font-family: Roboto; vertical-align: baseline; white-space: pre-wrap;">usb: hub: FDO: Rework IRP_MN_QUERY_DEVICE_RELATIONS</span></span></a><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">” commit resolved that situation and Composite USB device with its HID subdevices appears in USB device tree. The result is shown below:</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-size: 14.6667px; font-family: Arial; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><img height="421" src="https://lh3.googleusercontent.com/y1v-TvQSAi6r_mQZtCYEZ2FfK8jgxmurEyNwAaxBerWmgst2l0khNWx-VU__tfJ08JpXrx7FUbxXQX4qOtLaf8j7GB-gkzNXaUxRBrYmUt1PnBeXTUOEXSIQYSux6y09a7JdBeM_" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" width="624"></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p><span style="font-size:18px;"><span style="font-family: Arial; white-space: pre-wrap; line-height: 1.38; background-color: transparent;">Next I addressed the task of removability. At the beginning it was hanging on usbccgp removal from device manager or usb device physically disconnection.</span></span></p>
+<p><span style="font-size:18px;"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">To fix this kind of issues I’ve added(or re implemented) all the PnP handling stuff in </span><span style="font-family: Arial; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">usbhub</span><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"> bus driver. After these modifications the stack was easily handling </span><span style="font-family: Arial; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">surprise-removal</span><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">(device disconnection from port) and usb device (but not controller) removal from device manager.</span></span></p>
+<p><span style="font-size:18px;"><span style="font-family: Arial; white-space: pre-wrap; line-height: 1.38; background-color: transparent;">Also I have added synchronization mechanisms for shared resources management and remove-synchronization to usbhub.</span></span></p>
+<p><span style="font-size:18px;"><span style="font-family: Arial; white-space: pre-wrap; line-height: 1.38; background-color: transparent;">Before moving driver to ReactOS, testing with Driver Verifier (DV) have been done. Seems like our usbhub was never been validated with DV. There was a number of issues in PnP handling not only in usbhub, but also in libusb. The verifier was complaining everywhere, on boot, on removal, on shutdown... I spent several days to fix all the DV reported issues. So now with our usbhub+usbohci, with enhanced I/O validation enabled DV is not complaining at all. To be honest, I should say that there are tests for OHCI which have not been performed, so this quietness of DV is only for usbhub.</span></span></p>
+<p><span style="font-size:18px;"><span style="font-family: Arial; white-space: pre-wrap; line-height: 1.38; background-color: transparent;">There is still one pending issue related MS’s hidusb. It is not unloading from device manager because of reference hold. I have done some debugging, but postponed fixing this issue due to time limits of the project.</span></span></p>
+<h4 dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size:18px;"><span style="color:#696969;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">ReactOS</span><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">.</span></span></span></span></strong></h4>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">On ROS the PnP handing is not fully tested yet, due to some non-USB related issues:</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap;">CORE-11849 - “BSoD on shut-down after USB-flash ejection.” (Bug reported by me)</span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">In general I’ve successfully tested physical disconnect / connect for usb-flesh, mouse and keyboard under ROS. All devices are performing well after disconnect-&gt;connect sequence.</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">I have been involved in issue creation, reproduction and fixing process as well. This was not less interesting than development of new features. After finalizing the commits for PnP handling, I moved to real world issues from Jira. I have created, reproduced, commented or fixed the following issues:</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap;">CORE-6257 - OS hangs during startup with connected USB drive (closed)</span><br class="kix-line-break">
+	<span style="font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap;">CORE-7743 - Many bugs related to USB (closed)</span><br class="kix-line-break">
+	<span style="font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap;">CORE-7224 - Port reset loop when USB device attached on boot (reported unreproducible)</span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap;">CORE-11367 - FDODeviceExtension-&gt;ActiveSrb != NULL after ejecting USB FAT32 flash (reported unreproducible)</span><br class="kix-line-break">
+	<span style="font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap;">CORE-6831 - USB mouse is not working in VMware (commented explanation of the cause)</span><br class="kix-line-break">
+	<span style="font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap;">CORE-11538 - BSOD on startup when a PowerA Pro Elite Wireless controller is attached (fixed)</span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap;">CORE-6331 - &nbsp;USB-Wlan Adapter RTL8187 not working (assigned to me)</span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">All issues are classified into HW reproducible and SW reproducible (on VM) categories. I’ve started to work on SW ones as there are easier to reproduce and work on (from time perspective). Also HW issues are unpredictable for estimation, so it is too risky to work on them in terms of GSoC. After this GSoC I’ll work on HW reproducible issues as well.</span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<h3 dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size:18px;"><span style="color:#4b0082;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">What’s next?</span></span></span></span></h3>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span style="color:#696969;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Also me and my mentor have prepared list of long term tasks on which I will work on later.</span></span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="color:#696969;"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">* Add support for posting URBs at DISPATCH_LEVEL (CORE-6331)</span><br class="kix-line-break">
+	<span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">* Add (non-root) hub support to usbhub (CORE-6831 )</span><br class="kix-line-break">
+	<span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">* Fix boot-from-USB support (</span></span><a href="https://jira.reactos.org/browse/CORE-7826" style="text-decoration:none;"><span style="color:#696969;"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">CORE-7826</span></span></a><span style="color:#696969;"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">)</span></span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span style="color:#696969;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">* Fix MS’s HIDUSB removal in 2k3. </span></span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span style="color:#696969;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">* Fix "Official ROS testing laptop" USB support (CORE-9296)</span><br class="kix-line-break">
+	<span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">* Implement usbxhci (large project, low priority)</span></span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+<h3 dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size:18px;"><span style="color:#4b0082;"><span style="font-family: Arial; font-weight: 700; line-height: 1.38; white-space: pre-wrap; background-color: transparent;">P.S.</span></span></span></h3>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span style="color:#696969;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Everywhere it is written “I” you can interpret it as “we”, as all time I’ve worked on this project, my mentor was standing with me and was reachable every time I had something to ask. </span></span></span></span></p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:18px;"><span style="color:#696969;"><span id="docs-internal-guid-5c26464d-b20d-aaa0-7e27-1c0dc5a16fa8"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;">Thank you Tom!</span></span></span></span></p>
+<div>&nbsp;</div>
+
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://colinfinck.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.7"><i class="fa fa-tags"></i> 0.4.7</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.8"><i class="fa fa-tags"></i> 0.4.8</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/0.4.9"><i class="fa fa-tags"></i> 0.4.9</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/announce"><i class="fa fa-tags"></i> announce</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/call"><i class="fa fa-tags"></i> call</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/cc"><i class="fa fa-tags"></i> cc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/contributions"><i class="fa fa-tags"></i> contributions</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/drwatson"><i class="fa fa-tags"></i> drwatson</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/filesystems"><i class="fa fa-tags"></i> filesystems</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/gsoc"><i class="fa fa-tags"></i> gsoc</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/hello"><i class="fa fa-tags"></i> hello</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/mm"><i class="fa fa-tags"></i> mm</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/network"><i class="fa fa-tags"></i> network</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/nt6"><i class="fa fa-tags"></i> nt6</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/ntfs"><i class="fa fa-tags"></i> ntfs</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/office"><i class="fa fa-tags"></i> office</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/rapps"><i class="fa fa-tags"></i> rapps</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/release"><i class="fa fa-tags"></i> release</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/revamp"><i class="fa fa-tags"></i> revamp</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/self-hosting"><i class="fa fa-tags"></i> self-hosting</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/social"><i class="fa fa-tags"></i> social</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/students"><i class="fa fa-tags"></i> students</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/taskbar"><i class="fa fa-tags"></i> taskbar</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/telegram"><i class="fa fa-tags"></i> telegram</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/usb"><i class="fa fa-tags"></i> usb</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/website"><i class="fa fa-tags"></i> website</a>
+            </li>
+            
+            <li><a href="https://colinfinck.github.io/tags/zipfldr"><i class="fa fa-tags"></i> zipfldr</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="row" id="copyright">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="col-md-4">&copy; 1996-2019 ReactOS Team &amp; Contributors</div>
+
+		<div class="col-md-4">
+			<ul class="links">
+				
+					<li><a href="https://github.com/colinfinck/web-content/tree/master/content/blogs/gsoc-final-report-usb-project-0.html">Improve this page</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md-4 text-right">
+			Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+			
+			Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+
+			<div class="pull-right">
+				<div class="social">
+					<a class="facebook" href="https://facebook.com/ReactOS-19143619259" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/reactos" target="_blank"><i class="fa fa-github"></i></a>
+					<a class="twitter" href="https://twitter.com/reactos" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="vk" href="https://vk.com/reactos_ru" target="_blank"><i class="fa fa-vk"></i></a>
+					<a class="youtube" href="https://youtube.com/c/ReactOSCommunity" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+
+				<ul class="links">
+					<li><a href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		<script src="https://colinfinck.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://colinfinck.github.io/js/bootstrap.min.js"></script>
+
+
+
+	</body>
+</html>

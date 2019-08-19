@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vicmarcal on ReactOS Website</title>
+    <link>https://colinfinck.github.io/author/vicmarcal/</link>
+    <description>Recent content in vicmarcal on ReactOS Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://colinfinck.github.io/author/vicmarcal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ReactOS 0.4.8 released!!</title>
+      <link>https://colinfinck.github.io/project-news/reactos-048-released/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/reactos-048-released/</guid>
+      <description>The ReactOS Project is pleased to announce the release of version 0.4.8 as we continue to work on releasing every three months.
+As you may know, our previous 0.4.7 version was the first one developed in our Git/GitHub repository. 0.4.8 is the nice sequel and a good way to measure the GitHub impact on the ReactOS project. Since ReactOS reached GitHub, it has been forked 248 times. A nice amount understanding ReactOS is not a framework or a library, but a final product.</description>
+    </item>
+    
+    <item>
+      <title>ReactOS 0.4.7 released!</title>
+      <link>https://colinfinck.github.io/project-news/reactos-047-released/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/reactos-047-released/</guid>
+      <description>The ReactOS Project is pleased to announce the release of version 0.4.7 as we continue to work on releasing every three months.
+We’re especially pleased to present this release as the very first one that’s been developed in our new Git/GitHub repository. Moving from Subversion to GitHub has proven to be an invaluable way to reach new testers, users and improve the overall awareness of the ReactOS project.
+To highlight the impact we’ve had since we moved to GitHub two months ago, ReactOS now leads the Win32Api and OsDev categories in Github, overtaking many amazing and well established projects.</description>
+    </item>
+    
+    <item>
+      <title>The day after: ReactOS in the OpenSourceLisbon...</title>
+      <link>https://colinfinck.github.io/project-news/day-after-reactos-opensourcelisbon/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/day-after-reactos-opensourcelisbon/</guid>
+      <description>28th September was a sunny and amazing day for us, the open source lovers. During the whole day, the Universidade Nova de Lisboa held the #OpenSourceLx event. The biggest and free open source event in Portugal.
+Projects and companies as Syone, RedHat, Microsoft, Elastic, FSF, IpBrick, among others, were offering simultaneous talks during the event. In this edition ReactOS was invited to talk about the project evolution during 45 minutes in the &#34;</description>
+    </item>
+    
+    <item>
+      <title>Join ReactOS in Open Source Lisbon 2017</title>
+      <link>https://colinfinck.github.io/project-news/join-reactos-open-source-lisbon-2017/</link>
+      <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/join-reactos-open-source-lisbon-2017/</guid>
+      <description>As you may know ReactOS, during this year, has been already shown in Belgium, Germany and Spain in several open source events. We&#39;re always looking forward to be part of new events and reach new countries.
+ ReactOS has been selected by the Open Source Lisbon organization to be part of their event on 28th September. An amazing opportunity to reach a new country ( this is our first time ever in Portugal ) from the hand of the biggest open source FREE event in Portugal.</description>
+    </item>
+    
+    <item>
+      <title>ReactOS 0.4.6 released</title>
+      <link>https://colinfinck.github.io/project-news/reactos-046-released/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/reactos-046-released/</guid>
+      <description>The ReactOS Project is pleased to release version 0.4.6 as a continuation of its three month cadence. 0.4.6 is a major step towards real hardware support. Several dual boot issues have been fixed and now partitions are managed in a safer way avoiding corruption of the partition list structures. ReactOS Loader can now load custom kernels and HALs. Printing Subsystem is still greenish in 0.4.6, however Colin Finck has implemented a huge number of new APIs and fixed some of the bugs reported and detected by the ReactOS automated tests.</description>
+    </item>
+    
+    <item>
+      <title>ReactOS Hackfest 2017 and FrOSCon17!</title>
+      <link>https://colinfinck.github.io/project-news/reactos-hackfest-2017-and-froscon17/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/reactos-hackfest-2017-and-froscon17/</guid>
+      <description>The ReactOS Team is proud to announce that ReactOS has been selected to be present in the FrOSCon17 event.
+&amp;nbsp; FrOSCon 2017  FrOSCon is a free software and open source event organized by the University of Applied Sciences Bonn-Rhein-Sieg (Germany) full of talks, workshops and booths. Entry is absolutely free so there is no excuse not to meet the ReactOS team live. This event takes place on 19th and 20th August so feel free to book your flights or plan a nice weekend to visit our booth there.</description>
+    </item>
+    
+    <item>
+      <title>ReactOS has been accepted for GSOC&#39;17</title>
+      <link>https://colinfinck.github.io/project-news/reactos-has-been-accepted-gsoc17/</link>
+      <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/reactos-has-been-accepted-gsoc17/</guid>
+      <description>The ReactOS Team is proud to announce that Google has once again selected the ReactOS project to be part in the upcoming 2017 Google Summer of Code.
+This is the first time ReactOS has been accepted for GSOC two years consecutively, setting an important landmark in ReactOS’ history. No doubt the amazing work of the ReactOS mentors and students in the 2016 program contributed to make this possible.
+The GSOC program is a great opportunity to join recognized and skilled mentors with eager and skilled students alike.</description>
+    </item>
+    
+    <item>
+      <title>Controlling (not just) Ctrl&#43;C</title>
+      <link>https://colinfinck.github.io/blogs/controlling-not-just-ctrlc/</link>
+      <pubDate>Sat, 13 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/controlling-not-just-ctrlc/</guid>
+      <description>Probably one of the funniest moments while developing is when you realize that something that &#34;looks easy&#34; is not as straight forward as it seemed at first sight.
+The task was &#34;really easy&#34;: Just creating a console app which (1)loops infinitely, (2)doing some tasks and (3) which breaks when the user decides to stop it (4)printing some valuable info before exiting.
+&#34;Naaah, this is easy. I just need a while/for/do-while/whatever infinite loop, a printf message asking the user to press a specific key to stop it, then a getch() to capture the key in order to break/stop the loop, and finally another printf to print the valuable info: PROFIT!</description>
+    </item>
+    
+    <item>
+      <title>Hello Telegram. A new #ReactOS channel</title>
+      <link>https://colinfinck.github.io/project-news/hello-telegram-new-reactos-channel/</link>
+      <pubDate>Fri, 17 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/hello-telegram-new-reactos-channel/</guid>
+      <description>Hello Telegram!  Technology keeps evolving and the ReactOS Community growing. We&#39;re proud to introduce a new way to keep in touch with ,and updated of, the latest #ReactOS news.
+ The ReactOS project is probably one of the open source communities with a higher social network impact out there.Our ReactOS Twitter channel and ReactOS Facebook page are updated daily with the latest commits, news, and fixes thanks to a nifty integration with our development tools and, of course, some human care.</description>
+    </item>
+    
+    <item>
+      <title>ReactOS Participation in Google Summer of Code 2016</title>
+      <link>https://colinfinck.github.io/project-news/reactos-participation-google-summer-code-2016/</link>
+      <pubDate>Mon, 29 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/reactos-participation-google-summer-code-2016/</guid>
+      <description>After five years the ReactOS Project is returning to the Google Summer of Code. On the heels of the 0.4.0 release the project&#39;s aim is on creating smoother user experiences and generally making the system feel more robust and pleasant to use. The team is looking for students interested in learning more about the NT architecture that underpins the most widely used desktop operating system in the world and who wants to take part in the creation of an open source implementation of it.</description>
+    </item>
+    
+    <item>
+      <title>Discover the new ReactOS website</title>
+      <link>https://colinfinck.github.io/project-news/discover-new-reactos-website2/</link>
+      <pubDate>Mon, 08 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/discover-new-reactos-website2/</guid>
+      <description>As you may have noticed, the ReactOS website has been completely revamped. During the last year, the ReactOS Team has been focusing on entering the 0.4 era, the latest major alpha series before the 0.5 Beta. A common feeling among the ReactOS community was that our (now old) website was not good enough from content, design, and technology points of view to honor one of the greatest releases in the ReactOS history.</description>
+    </item>
+    
+    <item>
+      <title>The First Ever ReactOS Hackfest!</title>
+      <link>https://colinfinck.github.io/blogs/first-ever-reactos-hackfest/</link>
+      <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/first-ever-reactos-hackfest/</guid>
+      <description>Join us for the very first ReactOS Hackfest from Friday, 7th August to Wednesday, 12th August 2015, in the German city of Aachen. Discover Germany&#39;s most-Western city in the direct neighborhood of Belgium and the Netherlands. Within the historical city center, Aachen offers a scientific environment and a high density of pubs. Let&#39;s catch this atmosphere to code the week away and achieve great results as a team!
+ It is now time to plan your trip!</description>
+    </item>
+    
+    <item>
+      <title>ReactOS Shop Grows!!</title>
+      <link>https://colinfinck.github.io/blogs/reactos-shop-grows/</link>
+      <pubDate>Thu, 23 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/reactos-shop-grows/</guid>
+      <description>One of the most important ways to maintain our ReactOS development is through Donations, another way is through helping us reach out to new and cool developers by sharing these news! We&#39;re proud to share that our Shop is not just including the USB stick, but also.. 6 new and crazy pieces! A must have: An awesome ReactOS mug for your breakfast or evening coffee which can&#39;t look better. Do you see how that black background makes ReactOS orb shine?</description>
+    </item>
+    
+    <item>
+      <title>Contributions: UltraVNC 1.0.5</title>
+      <link>https://colinfinck.github.io/blogs/contributions-ultravnc/</link>
+      <pubDate>Mon, 04 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/contributions-ultravnc/</guid>
+      <description>Thanks to Oldman, we&#39;re proud to announce that UltraVNC 1.0.5 is now running in ReactOS.
+UltraVNC is a powerful, easy to use and free remote pc access software that can display the screen of another computer (via internet or network) on your own screen. The program allows you to use your mouse and keyboard to control the other PC remotely. It means that you can work on a remote computer, as if you were sitting in front of it, right from your current location.</description>
+    </item>
+    
+    <item>
+      <title>Contributions: Command &amp; Conquer: Red Alert 2</title>
+      <link>https://colinfinck.github.io/blogs/contributions-command-conquer-red-alert-2/</link>
+      <pubDate>Mon, 16 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/contributions-command-conquer-red-alert-2/</guid>
+      <description>Thanks to BlackFox, we are proud to announce that &#34;C&amp;amp;C: Red Alert 2&#34; is now running in ReactOS.
+So if you have a &#34;lazy evening&#34; just give it a try and enjoy the Allied or the Soviet campaigns!
+A GamePro reviewer said about this game: &#34;Command &amp;amp; Conquer: Red Alert 2 is the best 2D real-time strategy game since Starcraft&#34;.
+&amp;nbsp;
+&amp;nbsp;
+The ReactOS Menu is shown just to prove this is not a Windows capture but a ReactOS one.</description>
+    </item>
+    
+    <item>
+      <title>ReactOS (R)evolution is happening!</title>
+      <link>https://colinfinck.github.io/project-news/reactos-revolution-happening/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/reactos-revolution-happening/</guid>
+      <description>The ReactOS (R)evolution has begun!
+During the last couple of months we have been compiling all your&amp;nbsp;feedback and suggestions about ReactOS in order to come up with a new&amp;nbsp;paradigm. Now the time has come to show you what we&#39;ve been working on:&amp;nbsp;ReactOS Community Edition.
+ReactOS Community Edition is.. special, not just as a form of&amp;nbsp;connecting further with our Community, it also opens doors to new&amp;nbsp;ideas and strategies.
+We hope that you like all the work that we&#39;ve done as we got inspired by&amp;nbsp;a lot of your ideas.</description>
+    </item>
+    
+    <item>
+      <title>ReactOS. The (R)evolution is now here. </title>
+      <link>https://colinfinck.github.io/project-news/reactos-revolution-now-here/</link>
+      <pubDate>Sat, 22 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/project-news/reactos-revolution-now-here/</guid>
+      <description>For a over a year we&#39;ve been working hard on the ReactOS (R)evolution. It is undoubtedly the largest initiative from the ReactOS Foundation so far in terms of Strategy and Evolution. When Microsoft started counting down to the end we started counting down to a new beginning.
+Big changes are coming, while you will find some of them desired and expected thanks to your feedback and support, you&#39;ll also be greatly surprised by some others: It&#39;s time to move ReactOS to the Next Level.</description>
+    </item>
+    
+    <item>
+      <title>Proper?! Windows explorer.exe implementation</title>
+      <link>https://colinfinck.github.io/blogs/proper-windows-explorer-exe-implementation/</link>
+      <pubDate>Tue, 11 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/proper-windows-explorer-exe-implementation/</guid>
+      <description>&#34;A picture is worth a thousand words&#34;
+Thanks Giannis for this awesome work</description>
+    </item>
+    
+    <item>
+      <title>Anonymous spread word of ReactOS Kickstarter</title>
+      <link>https://colinfinck.github.io/blogs/anonymous-spread-word-reactos-kickstarter/</link>
+      <pubDate>Mon, 10 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/anonymous-spread-word-reactos-kickstarter/</guid>
+      <description>An interesting tidbit.
+First because the motto seems to be real: &#34;We are All. We are everywhere&#34;.&amp;nbsp; Second, because they have just twitted the following::
+&amp;nbsp;
+As you may know, ReactOS began a Kickstarter campaign to create a business product to help supporting and boosting current ReactOS development.
+What is it about?
+
+Thorium Core is about taking the ReactOS operating system from the proof-of-concept and engineering stages to building a fast and lightweight solution that can be tailored to suit the computing needs of both private and commercial users.</description>
+    </item>
+    
+    <item>
+      <title>Contributions: MS Office 2003</title>
+      <link>https://colinfinck.github.io/blogs/contributions-ms-office-2003/</link>
+      <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/contributions-ms-office-2003/</guid>
+      <description>This time a double-win.
+Not so long ago trying to run a whole office suite was almost a dream. Just launching an app was a success.There was just one complex suite almost working: &#34;SoftMaker Office 2008&#34;. A nice, and mostly unknown, Microsoft Office clone. It was such a good Office clone that it is closed and non-free.
+From past experience you can find two kind of users out there: &#34;</description>
+    </item>
+    
+    <item>
+      <title>Contributions: TeamSpeaker!</title>
+      <link>https://colinfinck.github.io/blogs/contributions-teamspeaker/</link>
+      <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/contributions-teamspeaker/</guid>
+      <description>&amp;nbsp;
+After opening the totally unofficial, irrelevant, NôÓbsletter section, now it&#39;s time to open a new serious section oriented and opened to the Community. Because, as you may know, an opensource project has sense thanks because its supporting Community behind it.
+Welcome to this awesome, yours, &#34;Contribution&#34; section.
+From time to time astonishing content is created by the Community and shared through IRC or Forum. It&#39;s a pity that such content keeps moving just in the inner circle.</description>
+    </item>
+    
+    <item>
+      <title>NôÓbsletters: Moar games!Moar compatibility!</title>
+      <link>https://colinfinck.github.io/blogs/moar-games-moar-compatibility/</link>
+      <pubDate>Wed, 20 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://colinfinck.github.io/blogs/moar-games-moar-compatibility/</guid>
+      <description>Well, let&#39;s face it! Users love Games. Me too.
+I still have some really great childhood memories, playing with those lovely old games.
+Do you remember trying to save the poor Lemmings? Damn, they do seem predestined to fall!&amp;nbsp;
+Or what about XWing? And Dangerous Dave (a blatant game copy of&amp;nbsp; inspired by Super Mario)? I still have nightmares with the Aliens from X-COM every once in a while !</description>
+    </item>
+    
+  </channel>
+</rss>
